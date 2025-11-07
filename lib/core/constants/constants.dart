@@ -1,5 +1,9 @@
 import 'package:animated_notch_bottom_bar/animated_notch_bottom_bar/animated_notch_bottom_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:newsly/features/bookmarks/presentation/widgets/bookmarks_body.dart';
+import 'package:newsly/features/categories/presentation/widgets/categories_body.dart';
+import 'package:newsly/features/feed/presentation/widgets/feed_body.dart';
+import 'package:newsly/features/settings/presentation/widgets/settings_body.dart';
 import 'package:newsly/generated/l10n.dart';
 
 class Constants {
@@ -9,8 +13,8 @@ class Constants {
   ) {
     return [
       BottomBarItem(
-        inActiveItem: Icon(Icons.home_outlined),
-        activeItem: Icon(Icons.home),
+        inActiveItem: Icon(Icons.feed_outlined),
+        activeItem: Icon(Icons.feed),
         itemLabel: S.of(context).feed,
       ),
       BottomBarItem(
@@ -30,4 +34,10 @@ class Constants {
       ),
     ];
   }
+  static List<Widget> homeBodies =[
+    const FeedBody(),
+    const BookmarksBody(),
+    const CategoriesBody(),
+    const SettingsBody(),
+  ];
 }
