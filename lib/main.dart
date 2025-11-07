@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:newsly/features/home/presentation/views/home_view.dart';
+import 'package:newsly/core/routes/app_routes.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,6 +10,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home: HomeView());
+    return MaterialApp.router(
+      debugShowCheckedModeBanner: false,
+      routerConfig: router,
+    );
   }
 }
