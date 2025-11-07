@@ -6,6 +6,6 @@ final router = GoRouter(
   routes: [
   GoRoute(
     path: HomeView.routeName,
-    builder: (context, state) => const HomeView(),
+    builder: (context, state) =>  HomeView(),
   )
 ]);

@@ -1,1 +1,6 @@
-{}
+{
+    "feed": "feed",
+    "bookmarks": "Bookmarks",
+    "categories":"Categories",
+    "settings":"Settings"
+}

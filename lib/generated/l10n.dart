@@ -53,6 +53,26 @@ class S {
   static S? maybeOf(BuildContext context) {
     return Localizations.of<S>(context, S);
   }
+
+  /// `feed`
+  String get feed {
+    return Intl.message('feed', name: 'feed', desc: '', args: []);
+  }
+
+  /// `Bookmarks`
+  String get bookmarks {
+    return Intl.message('Bookmarks', name: 'bookmarks', desc: '', args: []);
+  }
+
+  /// `Categories`
+  String get categories {
+    return Intl.message('Categories', name: 'categories', desc: '', args: []);
+  }
+
+  /// `Settings`
+  String get settings {
+    return Intl.message('Settings', name: 'settings', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
