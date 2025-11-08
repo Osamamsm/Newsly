@@ -1,6 +1,7 @@
 import 'package:animated_notch_bottom_bar/animated_notch_bottom_bar/animated_notch_bottom_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:newsly/core/constants/app_colors.dart';
 import 'package:newsly/core/constants/constants.dart';
 import 'package:newsly/features/home/presentation/view_model/nav_bar_cubit/nav_bar_cubit.dart';
 
@@ -23,7 +24,8 @@ class CustomButtonNavigationBar extends StatelessWidget {
           kBottomRadius: 5,
           showLabel: false,
           durationInMilliSeconds: 100,
-          color: Colors.blueGrey[200]!,
+          color: AppColors.kPrimaryLightColor,
+          notchColor: AppColors.white,
         );
       },
     );
