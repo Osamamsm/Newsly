@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:newsly/core/models/category_model.dart';
 import 'package:newsly/features/categories/presentation/widgets/category_item_widget.dart';
 
 class CategoriesGridView extends StatelessWidget {
-  const CategoriesGridView({
-    super.key,
-  });
+  const CategoriesGridView({super.key, required this.categories});
 
+  final List<CategoryModel> categories;
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
@@ -18,7 +18,8 @@ class CategoriesGridView extends StatelessWidget {
         childAspectRatio: 1.5,
       ),
       itemCount: 10,
-      itemBuilder: (context, index) => CategoryItemWidget(),
+      itemBuilder: (context, index) =>
+          CategoryItemWidget(category: categories[index]),
     );
   }
 }
