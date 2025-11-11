@@ -83,6 +83,61 @@ class S {
   String get top_stories {
     return Intl.message('Top Stories', name: 'top_stories', desc: '', args: []);
   }
+
+  /// `General`
+  String get general {
+    return Intl.message('General', name: 'general', desc: '', args: []);
+  }
+
+  /// `Business`
+  String get business {
+    return Intl.message('Business', name: 'business', desc: '', args: []);
+  }
+
+  /// `Entertainment`
+  String get entertainment {
+    return Intl.message(
+      'Entertainment',
+      name: 'entertainment',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Health`
+  String get health {
+    return Intl.message('Health', name: 'health', desc: '', args: []);
+  }
+
+  /// `Science`
+  String get science {
+    return Intl.message('Science', name: 'science', desc: '', args: []);
+  }
+
+  /// `Sports`
+  String get sports {
+    return Intl.message('Sports', name: 'sports', desc: '', args: []);
+  }
+
+  /// `Technology`
+  String get technology {
+    return Intl.message('Technology', name: 'technology', desc: '', args: []);
+  }
+
+  /// `Politics`
+  String get politics {
+    return Intl.message('Politics', name: 'politics', desc: '', args: []);
+  }
+
+  /// `Food`
+  String get food {
+    return Intl.message('Food', name: 'food', desc: '', args: []);
+  }
+
+  /// `Travel`
+  String get travel {
+    return Intl.message('Travel', name: 'travel', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

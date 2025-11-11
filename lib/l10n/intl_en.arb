@@ -4,5 +4,15 @@
     "categories":"Categories",
     "settings":"Settings",
     "for_you":"For You",
-    "top_stories":"Top Stories"
+    "top_stories":"Top Stories",
+    "general":"General",
+    "business":"Business",
+    "entertainment":"Entertainment",
+    "health":"Health",
+    "science":"Science",
+    "sports":"Sports",
+    "technology":"Technology",
+    "politics":"Politics",
+    "food":"Food",
+    "travel":"Travel"
 }

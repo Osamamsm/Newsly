@@ -23,10 +23,19 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
     "bookmarks": MessageLookupByLibrary.simpleMessage("علامات مرجعية"),
+    "business": MessageLookupByLibrary.simpleMessage("أعمال"),
     "categories": MessageLookupByLibrary.simpleMessage("فئات"),
+    "entertainment": MessageLookupByLibrary.simpleMessage("ترفيه"),
     "feed": MessageLookupByLibrary.simpleMessage("الموجز"),
+    "food": MessageLookupByLibrary.simpleMessage("طعام"),
     "for_you": MessageLookupByLibrary.simpleMessage("من أجلك"),
+    "general": MessageLookupByLibrary.simpleMessage("عام"),
+    "health": MessageLookupByLibrary.simpleMessage("صحة"),
+    "science": MessageLookupByLibrary.simpleMessage("علوم"),
     "settings": MessageLookupByLibrary.simpleMessage("الإعدادات"),
+    "sports": MessageLookupByLibrary.simpleMessage("رياضة"),
+    "technology": MessageLookupByLibrary.simpleMessage("تكنولوجيا"),
     "top_stories": MessageLookupByLibrary.simpleMessage("أهم العناوين"),
+    "travel": MessageLookupByLibrary.simpleMessage("سفر"),
   };
 }

@@ -1,6 +1,8 @@
 import 'package:animated_notch_bottom_bar/animated_notch_bottom_bar/animated_notch_bottom_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:newsly/core/constants/app_colors.dart';
+import 'package:newsly/core/models/category_model.dart';
 import 'package:newsly/features/bookmarks/presentation/widgets/bookmarks_body.dart';
 import 'package:newsly/features/categories/presentation/widgets/categories_body.dart';
 import 'package:newsly/features/feed/presentation/widgets/feed_body.dart';
@@ -42,4 +44,24 @@ class Constants {
     const CategoriesBody(),
     const SettingsBody(),
   ];
+
+  static List<CategoryModel> categoriesListLocalized(BuildContext context) {
+    return [
+      CategoryModel(
+        name: S.of(context).general,
+        iconData: FontAwesomeIcons.newspaper,
+      ),
+      CategoryModel(name: S.of(context).science, iconData: FontAwesomeIcons.flask),
+      CategoryModel(name: S.of(context).business, iconData: FontAwesomeIcons.briefcase),
+      CategoryModel(name: S.of(context).entertainment, iconData: FontAwesomeIcons.film),
+      CategoryModel(name: S.of(context).health, iconData: FontAwesomeIcons.heartPulse),
+      CategoryModel(name: S.of(context).sports, iconData: FontAwesomeIcons.football),
+      CategoryModel(name: S.of(context).technology, iconData: FontAwesomeIcons.microchip),
+      CategoryModel(name: S.of(context).politics, iconData: FontAwesomeIcons.landmark),
+      CategoryModel(name: S.of(context).food, iconData: FontAwesomeIcons.bowlFood),
+      CategoryModel(name: S.of(context).travel, iconData: FontAwesomeIcons.plane),
+    ];
+  }
 }
+
+

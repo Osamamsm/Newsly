@@ -4,5 +4,16 @@
     "categories":"فئات",
     "settings":"الإعدادات",
     "for_you":"من أجلك",
-    "top_stories":"أهم العناوين"
+    "top_stories":"أهم العناوين",
+    "general":"عام",
+    "business":"أعمال",
+    "entertainment":"ترفيه",
+    "health":"صحة",
+    "science":"علوم",
+    "sports":"رياضة",
+    "technology":"تكنولوجيا",
+    "politcs":"سياسة",
+    "food":"طعام",
+    "travel":"سفر"
+
 }
