@@ -25,6 +25,8 @@ class MessageLookup extends MessageLookupByLibrary {
     "bookmarks": MessageLookupByLibrary.simpleMessage("Bookmarks"),
     "categories": MessageLookupByLibrary.simpleMessage("Categories"),
     "feed": MessageLookupByLibrary.simpleMessage("feed"),
+    "for_you": MessageLookupByLibrary.simpleMessage("For You"),
     "settings": MessageLookupByLibrary.simpleMessage("Settings"),
+    "top_stories": MessageLookupByLibrary.simpleMessage("Top Stories"),
   };
 }

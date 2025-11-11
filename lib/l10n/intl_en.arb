@@ -2,5 +2,7 @@
     "feed": "feed",
     "bookmarks": "Bookmarks",
     "categories":"Categories",
-    "settings":"Settings"
+    "settings":"Settings",
+    "for_you":"For You",
+    "top_stories":"Top Stories"
 }

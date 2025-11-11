@@ -9,15 +9,13 @@ class ArticleTilesListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: ListView.separated(
-        physics: const BouncingScrollPhysics(),
-        itemCount: 10,
-        itemBuilder: (context, index) {
-          return const ArticleTileWidget();
-        },
-        separatorBuilder: (context, index) => vGap(15),
-      ),
+    return ListView.separated(
+      physics: const BouncingScrollPhysics(),
+      itemCount: 10,
+      itemBuilder: (context, index) {
+        return const ArticleTileWidget();
+      },
+      separatorBuilder: (context, index) => vGap(15),
     );
   }
 }

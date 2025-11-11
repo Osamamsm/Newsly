@@ -73,6 +73,16 @@ class S {
   String get settings {
     return Intl.message('Settings', name: 'settings', desc: '', args: []);
   }
+
+  /// `For You`
+  String get for_you {
+    return Intl.message('For You', name: 'for_you', desc: '', args: []);
+  }
+
+  /// `Top Stories`
+  String get top_stories {
+    return Intl.message('Top Stories', name: 'top_stories', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

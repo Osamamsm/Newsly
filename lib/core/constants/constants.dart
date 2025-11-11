@@ -14,22 +14,22 @@ class Constants {
   ) {
     return [
       BottomBarItem(
-        inActiveItem: Icon(Icons.feed_outlined, color: AppColors.darkGrey),
+        inActiveItem: Icon(Icons.feed_outlined, color: AppColors.white),
         activeItem: Icon(Icons.feed, color: AppColors.kPrimaryColor),
         itemLabel: S.of(context).feed,
       ),
       BottomBarItem(
-        inActiveItem: Icon(Icons.bookmarks_outlined, color: AppColors.darkGrey),
+        inActiveItem: Icon(Icons.bookmarks_outlined, color: AppColors.white),
         activeItem: Icon(Icons.bookmarks, color: AppColors.kPrimaryColor),
         itemLabel: S.of(context).bookmarks,
       ),
       BottomBarItem(
-        inActiveItem: Icon(Icons.category_outlined, color: AppColors.darkGrey),
+        inActiveItem: Icon(Icons.category_outlined, color: AppColors.white),
         activeItem: Icon(Icons.category, color: AppColors.kPrimaryColor),
         itemLabel: S.of(context).categories,
       ),
       BottomBarItem(
-        inActiveItem: Icon(Icons.settings, color: AppColors.darkGrey),
+        inActiveItem: Icon(Icons.settings, color: AppColors.white),
         activeItem: Icon(Icons.settings, color: AppColors.kPrimaryColor),
         itemLabel: S.of(context).settings,
       ),

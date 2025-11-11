@@ -12,10 +12,10 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Newsly'),
+        title: const Text('Newsly', style: TextStyle(color: AppColors.white)),
         backgroundColor: AppColors.kPrimaryColor,
       ),
-      backgroundColor: AppColors.kPrimaryLightColor,
+      backgroundColor: AppColors.greyLight,
       body: const HomeViewBody(),
       bottomNavigationBar: CustomButtonNavigationBar(),
     );

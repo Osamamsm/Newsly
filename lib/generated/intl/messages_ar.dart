@@ -25,6 +25,8 @@ class MessageLookup extends MessageLookupByLibrary {
     "bookmarks": MessageLookupByLibrary.simpleMessage("علامات مرجعية"),
     "categories": MessageLookupByLibrary.simpleMessage("فئات"),
     "feed": MessageLookupByLibrary.simpleMessage("الموجز"),
+    "for_you": MessageLookupByLibrary.simpleMessage("من أجلك"),
     "settings": MessageLookupByLibrary.simpleMessage("الإعدادات"),
+    "top_stories": MessageLookupByLibrary.simpleMessage("أهم العناوين"),
   };
 }
