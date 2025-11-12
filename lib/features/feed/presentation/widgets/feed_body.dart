@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:newsly/core/helpers/spacing.dart';
-import 'package:newsly/core/widgets/articles_tiles_list_view.dart';
+import 'package:newsly/core/widgets/article_tile_widget.dart';
+import 'package:newsly/core/widgets/articles_list_view.dart';
 import 'package:newsly/features/feed/presentation/widgets/custom_tab_bar.dart';
 
 class FeedBody extends StatelessWidget {
@@ -19,7 +20,10 @@ class FeedBody extends StatelessWidget {
             vGap(10),
             Expanded(
               child: TabBarView(
-                children: [ArticleTilesListView(), ArticleTilesListView()],
+                children: [
+                  ArticlesListView(itemBuilder: (build) => ArticleTileWidget()),
+                  ArticlesListView(itemBuilder: (build) => ArticleTileWidget()),
+                ],
               ),
             ),
           ],
@@ -28,5 +32,3 @@ class FeedBody extends StatelessWidget {
     );
   }
 }
-
-

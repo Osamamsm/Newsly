@@ -1,20 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:newsly/core/helpers/spacing.dart';
-import 'package:newsly/core/widgets/article_tile_widget.dart';
 
-class ArticleTilesListView extends StatelessWidget {
-  const ArticleTilesListView({
-    super.key,
-  });
+class ArticlesListView extends StatelessWidget {
+  const ArticlesListView({super.key, required this.itemBuilder});
+
+  final Widget Function(BuildContext build) itemBuilder;
 
   @override
   Widget build(BuildContext context) {
     return ListView.separated(
       physics: const BouncingScrollPhysics(),
       itemCount: 10,
-      itemBuilder: (context, index) {
-        return const ArticleTileWidget();
-      },
+      itemBuilder: (context, index) => itemBuilder(context),
       separatorBuilder: (context, index) => vGap(15),
     );
   }
