@@ -19,11 +19,11 @@ class ArticleTileWidget extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          ArticleImageWidget(),
+          ArticleImageWidget(height: 220, width: double.infinity),
           vGap(15),
-          ArticleTitleWidget(),
+          ArticleTitleWidget(horizontalPadding: 20,),
           vGap(15),
-          ArticleMetaRow(),
+          ArticleMetaRow(horizontalPadding: 20,),
           vGap(15),
         ],
       ),

@@ -3,12 +3,14 @@ import 'package:newsly/core/constants/app_text_styles.dart';
 import 'package:newsly/core/helpers/spacing.dart';
 
 class ArticleMetaRow extends StatelessWidget {
-  const ArticleMetaRow({super.key});
+  const ArticleMetaRow({super.key, required this.horizontalPadding});
 
+
+final double horizontalPadding;
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20.0),
+      padding:  EdgeInsets.symmetric(horizontal: horizontalPadding),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
