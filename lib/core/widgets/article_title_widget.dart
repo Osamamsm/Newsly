@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:newsly/core/constants/app_text_styles.dart';
 
 class ArticleTitleWidget extends StatelessWidget {
   const ArticleTitleWidget({super.key});
@@ -13,11 +14,7 @@ class ArticleTitleWidget extends StatelessWidget {
         maxLines: 2,
         overflow: TextOverflow.ellipsis,
 
-        style: TextStyle(
-          fontSize: 18,
-          fontWeight: FontWeight.w700,
-          height: 1.2,
-        ),
+        style: AppTextStyles.titleBoldBlack18,
       ),
     );
   }

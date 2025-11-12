@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:newsly/core/constants/app_colors.dart';
+import 'package:newsly/core/constants/app_text_styles.dart';
 import 'package:newsly/features/home/presentation/widgets/custom_bottom_navigation_bar.dart';
 import 'package:newsly/features/home/presentation/widgets/home_view_body.dart';
 
@@ -12,10 +13,10 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Newsly', style: TextStyle(color: AppColors.white)),
+        title: const Text('Newsly', style: AppTextStyles.titleBoldWhite18),
         backgroundColor: AppColors.kPrimaryColor,
       ),
-      backgroundColor: AppColors.greyLight,
+      backgroundColor: AppColors.kPrimaryLightColor,
       body: const HomeViewBody(),
       bottomNavigationBar: CustomButtonNavigationBar(),
     );

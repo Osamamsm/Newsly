@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:newsly/core/constants/app_colors.dart';
+import 'package:newsly/core/constants/app_text_styles.dart';
 import 'package:newsly/features/feed/presentation/widgets/tab_bar_item.dart';
 import 'package:newsly/generated/l10n.dart';
 
@@ -13,11 +14,7 @@ class CustomTabBar extends StatelessWidget {
       child: TabBar(
         labelPadding: EdgeInsets.zero,
         unselectedLabelColor: AppColors.grey,
-        labelStyle: TextStyle(
-          fontSize: 14,
-          fontWeight: FontWeight.bold,
-          color: AppColors.black,
-        ),
+        labelStyle: AppTextStyles.bodyMediumBlack14,
         indicatorWeight: 3,
         indicatorColor: AppColors.kPrimaryColor,
         tabs: [
@@ -28,5 +25,3 @@ class CustomTabBar extends StatelessWidget {
     );
   }
 }
-
-

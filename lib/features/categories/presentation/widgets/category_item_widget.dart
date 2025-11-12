@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:newsly/core/constants/app_colors.dart';
+import 'package:newsly/core/constants/app_text_styles.dart';
 import 'package:newsly/core/helpers/spacing.dart';
 import 'package:newsly/core/models/category_model.dart';
 
@@ -32,11 +33,7 @@ class CategoryItemWidget extends StatelessWidget {
           Expanded(
             child: Text(
               category.name,
-              style: TextStyle(
-                fontSize: 18,
-                fontWeight: FontWeight.w500,
-                color: AppColors.kPrimaryColor,
-              ),
+              style: AppTextStyles.primaryMedium18,
               overflow: TextOverflow.ellipsis,
               textAlign: TextAlign.center,
             ),

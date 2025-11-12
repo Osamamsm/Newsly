@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:newsly/core/constants/app_colors.dart';
+import 'package:newsly/core/constants/app_text_styles.dart';
 import 'package:newsly/core/helpers/spacing.dart';
 
 class ArticleMetaRow extends StatelessWidget {
@@ -12,23 +12,9 @@ class ArticleMetaRow extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          Text(
-            "filgoal",
-            style: TextStyle(
-              fontSize: 14,
-              fontWeight: FontWeight.w500,
-              color: AppColors.grey,
-            ),
-          ),
+          Text("filgoal", style: AppTextStyles.bodyMediumGrey14),
           hGap(10),
-          Text(
-            "\u2022  2 hours ago",
-            style: TextStyle(
-              fontSize: 14,
-              fontWeight: FontWeight.w500,
-              color: AppColors.grey,
-            ),
-          ),
+          Text("\u2022  2 hours ago", style: AppTextStyles.bodyMediumGrey14),
         ],
       ),
     );

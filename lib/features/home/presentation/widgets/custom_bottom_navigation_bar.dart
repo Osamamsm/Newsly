@@ -24,8 +24,8 @@ class CustomButtonNavigationBar extends StatelessWidget {
           kBottomRadius: 5,
           showLabel: false,
           durationInMilliSeconds: 100,
-          color: AppColors.kPrimaryLightColor,
-          notchColor: AppColors.white,
+          color: AppColors.kPrimaryColor,
+          notchColor: AppColors.greyLight,
         );
       },
     );
