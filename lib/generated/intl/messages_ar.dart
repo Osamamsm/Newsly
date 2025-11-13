@@ -39,6 +39,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "light_mode": MessageLookupByLibrary.simpleMessage("الوضع الفاتح"),
     "manage_categories": MessageLookupByLibrary.simpleMessage("إدارة الفئات"),
     "notifications": MessageLookupByLibrary.simpleMessage("إشعارات"),
+    "politics": MessageLookupByLibrary.simpleMessage("سياسة"),
     "science": MessageLookupByLibrary.simpleMessage("علوم"),
     "settings": MessageLookupByLibrary.simpleMessage("الإعدادات"),
     "sports": MessageLookupByLibrary.simpleMessage("رياضة"),
