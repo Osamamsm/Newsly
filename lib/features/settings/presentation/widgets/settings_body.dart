@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:newsly/core/constants/app_text_styles.dart';
 import 'package:newsly/core/helpers/spacing.dart';
+import 'package:newsly/features/settings/presentation/widgets/about_app_section.dart';
+import 'package:newsly/features/settings/presentation/widgets/general_settings_section.dart';
 import 'package:newsly/features/settings/presentation/widgets/theme_switch_tile_widget.dart';
 import 'package:newsly/generated/l10n.dart';
 
@@ -20,6 +22,10 @@ class SettingsBody extends StatelessWidget {
           ),
           vGap(10),
           ThemeSwitchTileWidget(),
+          vGap(10),
+          GeneralSettingsSection(),
+          vGap(10),
+          AboutAppSection(),
         ],
       ),
     );

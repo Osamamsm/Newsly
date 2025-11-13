@@ -19,7 +19,7 @@ class SettingTileWidget extends StatelessWidget {
       contentPadding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       tileColor: AppColors.white,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-      leading: Container(
+      leading: Container( 
         padding: const EdgeInsets.all(10),
         decoration: BoxDecoration(
           color: AppColors.kPrimaryLightColor,

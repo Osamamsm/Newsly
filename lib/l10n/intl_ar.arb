@@ -17,5 +17,10 @@
     "travel":"سفر",
     "appearance":"المظهر",
     "dark_mode":"الوضع الداكن",
-    "light_mode":"الوضع الفاتح"
+    "light_mode":"الوضع الفاتح",
+    "notifications":"إشعارات",
+    "manage_categories":"إدارة الفئات",
+    "about":"حول",
+    "about_app":"حول التطبيق",
+    "about_developer":"حول المطور"
 }

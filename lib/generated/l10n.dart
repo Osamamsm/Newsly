@@ -153,6 +153,46 @@ class S {
   String get light_mode {
     return Intl.message('Light Mode', name: 'light_mode', desc: '', args: []);
   }
+
+  /// `Notifications`
+  String get notifications {
+    return Intl.message(
+      'Notifications',
+      name: 'notifications',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Manage Categories`
+  String get manage_categories {
+    return Intl.message(
+      'Manage Categories',
+      name: 'manage_categories',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `About`
+  String get about {
+    return Intl.message('About', name: 'about', desc: '', args: []);
+  }
+
+  /// `About App`
+  String get about_app {
+    return Intl.message('About App', name: 'about_app', desc: '', args: []);
+  }
+
+  /// `About Developer`
+  String get about_developer {
+    return Intl.message(
+      'About Developer',
+      name: 'about_developer',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

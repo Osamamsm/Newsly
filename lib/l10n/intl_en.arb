@@ -17,5 +17,10 @@
     "travel":"Travel",
     "appearance":"Appearance",
     "dark_mode":"Dark Mode",
-    "light_mode":"Light Mode"
+    "light_mode":"Light Mode",
+    "notifications":"Notifications",
+    "manage_categories":"Manage Categories",
+    "about":"About",
+    "about_app":"About App",
+    "about_developer":"About Developer"
 }
