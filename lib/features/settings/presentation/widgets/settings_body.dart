@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:newsly/core/constants/app_text_styles.dart';
 import 'package:newsly/core/helpers/spacing.dart';
-import 'package:newsly/features/settings/presentation/widgets/setting_tile_widget.dart';
+import 'package:newsly/features/settings/presentation/widgets/theme_switch_tile_widget.dart';
+import 'package:newsly/generated/l10n.dart';
 
 class SettingsBody extends StatelessWidget {
   const SettingsBody({super.key});
@@ -13,9 +14,12 @@ class SettingsBody extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('Appearance', style: AppTextStyles.bodyBoldPrimary16),
+          Text(
+            S.of(context).appearance,
+            style: AppTextStyles.bodyBoldPrimary16,
+          ),
           vGap(10),
-          SettingTileWidget(title: "Dark Mode", icon: Icons.dark_mode_outlined),
+          ThemeSwitchTileWidget(),
         ],
       ),
     );

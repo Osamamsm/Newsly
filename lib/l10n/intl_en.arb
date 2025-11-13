@@ -14,5 +14,8 @@
     "technology":"Technology",
     "politics":"Politics",
     "food":"Food",
-    "travel":"Travel"
+    "travel":"Travel",
+    "appearance":"Appearance",
+    "dark_mode":"Dark Mode",
+    "light_mode":"Light Mode"
 }

@@ -14,6 +14,8 @@
     "technology":"تكنولوجيا",
     "politcs":"سياسة",
     "food":"طعام",
-    "travel":"سفر"
-
+    "travel":"سفر",
+    "appearance":"المظهر",
+    "dark_mode":"الوضع الداكن",
+    "light_mode":"الوضع الفاتح"
 }

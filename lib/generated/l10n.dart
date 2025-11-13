@@ -138,6 +138,21 @@ class S {
   String get travel {
     return Intl.message('Travel', name: 'travel', desc: '', args: []);
   }
+
+  /// `Appearance`
+  String get appearance {
+    return Intl.message('Appearance', name: 'appearance', desc: '', args: []);
+  }
+
+  /// `Dark Mode`
+  String get dark_mode {
+    return Intl.message('Dark Mode', name: 'dark_mode', desc: '', args: []);
+  }
+
+  /// `Light Mode`
+  String get light_mode {
+    return Intl.message('Light Mode', name: 'light_mode', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
