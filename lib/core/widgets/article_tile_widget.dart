@@ -29,8 +29,11 @@ class ArticleTileWidget extends StatelessWidget {
             ArticleImageWidget(height: 220, width: double.infinity),
             vGap(15),
             ArticleTitleWidget(
+              title:
+                  "Nearly 1 million bottles of prosecco recalled from Costco",
               horizontalPadding: 20,
               style: AppTextStyles.titleBoldBlack18,
+              maxLines: 2,
             ),
             vGap(15),
             ArticleMetaRow(horizontalPadding: 20),

@@ -13,8 +13,10 @@ class ArticleDetailsSliver extends StatelessWidget {
     return SliverList(
       delegate: SliverChildListDelegate([
         ArticleTitleWidget(
+          title: "Nearly 1 million bottles of prosecco recalled from Costco",
           horizontalPadding: 20,
           style: AppTextStyles.titleBoldBlack22,
+          maxLines: 3,
         ),
         vGap(12),
         ArticleMetaRow(horizontalPadding: 20),

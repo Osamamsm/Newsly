@@ -7,9 +7,7 @@ import 'package:newsly/core/widgets/article_title_widget.dart';
 import 'package:newsly/features/bookmarks/presentation/widgets/article_description_widget.dart';
 
 class BookMarkedArticleWidget extends StatelessWidget {
-  const BookMarkedArticleWidget({
-    super.key,
-  });
+  const BookMarkedArticleWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +32,13 @@ class BookMarkedArticleWidget extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                ArticleTitleWidget(horizontalPadding: 10, style: AppTextStyles.titleBoldBlack18,),
+                ArticleTitleWidget(
+                  title:
+                      "Nearly 1 million bottles of prosecco recalled from Costco",
+                  horizontalPadding: 10,
+                  style: AppTextStyles.titleBoldBlack18,
+                  maxLines: 2,
+                ),
                 vGap(4),
                 ArticleDescriptionWidget(),
                 vGap(8),
@@ -42,7 +46,7 @@ class BookMarkedArticleWidget extends StatelessWidget {
               ],
             ),
           ),
-    
+
           hGap(12),
           ClipRRect(
             borderRadius: BorderRadius.circular(16),

@@ -29,8 +29,10 @@ class SimilarArticleWidget extends StatelessWidget {
             ArticleImageWidget(height: 120, width: 220),
             vGap(15),
             ArticleTitleWidget(
+              title: "Nearly 1 million bottles of prosecco recalled from Costco",
               horizontalPadding: 20,
               style: AppTextStyles.titleBoldBlack16,
+              maxLines: 2,
             ),
           ],
         ),

@@ -5,8 +5,12 @@ class ArticleTitleWidget extends StatelessWidget {
     super.key,
     required this.horizontalPadding,
     required this.style,
+    required this.maxLines,
+    required this.title,
   });
 
+  final String title;
+  final int maxLines;
   final TextStyle style;
   final double horizontalPadding;
   @override
@@ -14,9 +18,9 @@ class ArticleTitleWidget extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: horizontalPadding),
       child: Text(
-        "Nearly 1 million bottles of prosecco recalled from Costco",
+        title,
         textAlign: TextAlign.start,
-        maxLines: 2,
+        maxLines: maxLines,
         overflow: TextOverflow.ellipsis,
 
         style: style,
