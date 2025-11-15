@@ -8,8 +8,22 @@ class AppTextStyles {
     color: AppColors.kPrimaryColor,
   );
 
+  static const TextStyle titleBoldBlack16 = TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.bold,
+    color: AppColors.black,
+    height: 1.2,
+  );
+  
   static const TextStyle titleBoldBlack18 = TextStyle(
     fontSize: 18,
+    fontWeight: FontWeight.bold,
+    color: AppColors.black,
+    height: 1.2,
+  );
+
+  static const TextStyle titleBoldBlack20 = TextStyle(
+    fontSize: 20,
     fontWeight: FontWeight.bold,
     color: AppColors.black,
     height: 1.2,
