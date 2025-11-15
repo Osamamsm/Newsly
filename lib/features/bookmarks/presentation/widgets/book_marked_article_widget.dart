@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:newsly/core/constants/app_text_styles.dart';
 import 'package:newsly/core/helpers/spacing.dart';
 import 'package:newsly/core/widgets/article_image_widget.dart';
 import 'package:newsly/core/widgets/article_meta_row.dart';
@@ -33,7 +34,7 @@ class BookMarkedArticleWidget extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                ArticleTitleWidget(horizontalPadding: 10),
+                ArticleTitleWidget(horizontalPadding: 10, style: AppTextStyles.titleBoldBlack18,),
                 vGap(4),
                 ArticleDescriptionWidget(),
                 vGap(8),

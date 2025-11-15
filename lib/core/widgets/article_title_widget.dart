@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:newsly/core/constants/app_text_styles.dart';
 
 class ArticleTitleWidget extends StatelessWidget {
-  const ArticleTitleWidget({super.key, required this.horizontalPadding});
+  const ArticleTitleWidget({super.key, required this.horizontalPadding, required this.style});
 
-
+final TextStyle style ;
 final double horizontalPadding ;
   @override
   Widget build(BuildContext context) {
