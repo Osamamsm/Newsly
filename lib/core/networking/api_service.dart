@@ -1,0 +1,25 @@
+import 'package:dio/dio.dart';
+import 'package:newsly/core/networking/api_constants.dart';
+
+class ApiService {
+  final Dio _dio;
+  static const _baseUrl = ApiConstants.baseUrl;
+  static const _apiKey = ApiConstants.apiKey;
+
+  ApiService(this._dio);
+  Future<Map<String, dynamic>> get(
+    String endpoint,
+    Map<String, dynamic>? queries,
+  ) async {
+    var response = await _dio.get(
+      "$_baseUrl$endpoint",
+      queryParameters: {
+        'apiKey': _apiKey,
+        'country':'eg',
+        'language':'ar', 
+        ...?queries,
+      },
+    );
+    return response.data;
+  }
+}
