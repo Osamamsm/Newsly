@@ -1,6 +1,9 @@
 import 'package:dio/dio.dart';
+import 'package:injectable/injectable.dart';
 import 'package:newsly/core/networking/api_constants.dart';
 
+
+@LazySingleton()
 class ApiService {
   final Dio _dio;
   static const _baseUrl = ApiConstants.baseUrl;
