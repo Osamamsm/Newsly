@@ -4,7 +4,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:newsly/core/constants/app_colors.dart';
 import 'package:newsly/core/models/category_model.dart';
 import 'package:newsly/features/bookmarks/presentation/widgets/bookmarks_body.dart';
-import 'package:newsly/features/categories/presentation/widgets/categories_body.dart';
+import 'package:newsly/features/category_news/presentation/widgets/categories_body.dart';
 import 'package:newsly/features/feed/presentation/widgets/feed_body.dart';
 import 'package:newsly/features/settings/presentation/widgets/settings_body.dart';
 import 'package:newsly/generated/l10n.dart';

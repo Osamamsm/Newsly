@@ -1,5 +1,4 @@
-import 'dart:nativewrappers/_internal/vm/lib/developer.dart';
-
+import 'dart:developer';
 import 'package:dio/dio.dart';
 import 'package:intl/intl.dart';
 import 'package:newsly/core/networking/api_error_model.dart';

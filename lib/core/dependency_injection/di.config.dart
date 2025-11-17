@@ -13,6 +13,8 @@ import 'package:dio/dio.dart' as _i361;
 import 'package:get_it/get_it.dart' as _i174;
 import 'package:injectable/injectable.dart' as _i526;
 import 'package:newsly/core/networking/api_service.dart' as _i331;
+import 'package:newsly/features/category_news/data/repos/category_news_repo_impl.dart'
+    as _i1051;
 import 'package:newsly/features/home/presentation/view_model/nav_bar_cubit/nav_bar_cubit.dart'
     as _i1;
 
@@ -25,6 +27,9 @@ extension GetItInjectableX on _i174.GetIt {
     final gh = _i526.GetItHelper(this, environment, environmentFilter);
     gh.factory<_i1.NavBarCubit>(() => _i1.NavBarCubit());
     gh.lazySingleton<_i331.ApiService>(() => _i331.ApiService(gh<_i361.Dio>()));
+    gh.lazySingleton<_i1051.CategoryNewsRepoImpl>(
+      () => _i1051.CategoryNewsRepoImpl(gh<_i331.ApiService>()),
+    );
     return this;
   }
 }
