@@ -89,6 +89,11 @@ class S {
     return Intl.message('General', name: 'general', desc: '', args: []);
   }
 
+  /// `Education`
+  String get education {
+    return Intl.message('Education', name: 'education', desc: '', args: []);
+  }
+
   /// `Business`
   String get business {
     return Intl.message('Business', name: 'business', desc: '', args: []);
@@ -137,6 +142,11 @@ class S {
   /// `Travel`
   String get travel {
     return Intl.message('Travel', name: 'travel', desc: '', args: []);
+  }
+
+  /// `Crime`
+  String get crime {
+    return Intl.message('Crime', name: 'crime', desc: '', args: []);
   }
 
   /// `Appearance`

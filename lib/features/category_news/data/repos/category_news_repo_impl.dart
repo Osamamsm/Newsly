@@ -7,8 +7,7 @@ import 'package:newsly/core/networking/api_error_model.dart';
 import 'package:newsly/core/networking/api_service.dart';
 import 'package:newsly/features/category_news/data/repos/category_news_repo.dart';
 
-
-@LazySingleton()
+@LazySingleton(as: CategoryNewsRepo)
 class CategoryNewsRepoImpl implements CategoryNewsRepo {
   final ApiService _apiService;
 
@@ -22,6 +21,7 @@ class CategoryNewsRepoImpl implements CategoryNewsRepo {
         endpoint: ApiConstants.latest,
         queries: {'category': category},
       );
+      print(category);
 
       List<Article> articles = [];
 

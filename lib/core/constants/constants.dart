@@ -48,20 +48,46 @@ class Constants {
   static List<CategoryModel> categoriesListLocalized(BuildContext context) {
     return [
       CategoryModel(
-        name: S.of(context).general,
-        iconData: FontAwesomeIcons.newspaper,
+        name: S.of(context).education,
+        iconData: FontAwesomeIcons.school,
       ),
-      CategoryModel(name: S.of(context).science, iconData: FontAwesomeIcons.flask),
-      CategoryModel(name: S.of(context).business, iconData: FontAwesomeIcons.briefcase),
-      CategoryModel(name: S.of(context).entertainment, iconData: FontAwesomeIcons.film),
-      CategoryModel(name: S.of(context).health, iconData: FontAwesomeIcons.heartPulse),
-      CategoryModel(name: S.of(context).sports, iconData: FontAwesomeIcons.football),
-      CategoryModel(name: S.of(context).technology, iconData: FontAwesomeIcons.microchip),
-      CategoryModel(name: S.of(context).politics, iconData: FontAwesomeIcons.landmark),
-      CategoryModel(name: S.of(context).food, iconData: FontAwesomeIcons.bowlFood),
-      CategoryModel(name: S.of(context).travel, iconData: FontAwesomeIcons.plane),
+      CategoryModel(
+        name: S.of(context).science,
+        iconData: FontAwesomeIcons.flask,
+      ),
+      CategoryModel(
+        name: S.of(context).business,
+        iconData: FontAwesomeIcons.briefcase,
+      ),
+      CategoryModel(
+        name: S.of(context).entertainment,
+        iconData: FontAwesomeIcons.film,
+      ),
+      CategoryModel(
+        name: S.of(context).health,
+        iconData: FontAwesomeIcons.heartPulse,
+      ),
+      CategoryModel(
+        name: S.of(context).sports,
+        iconData: FontAwesomeIcons.football,
+      ),
+      CategoryModel(
+        name: S.of(context).technology,
+        iconData: FontAwesomeIcons.microchip,
+      ),
+      CategoryModel(
+        name: S.of(context).politics,
+        iconData: FontAwesomeIcons.landmark,
+      ),
+      CategoryModel(
+        name: S.of(context).food,
+        iconData: FontAwesomeIcons.bowlFood,
+      ),
+      CategoryModel(
+        name: S.of(context).travel,
+        iconData: FontAwesomeIcons.plane,
+      ),
+      CategoryModel(name: S.of(context).crime, iconData: FontAwesomeIcons.handcuffs)
     ];
   }
 }
-
-

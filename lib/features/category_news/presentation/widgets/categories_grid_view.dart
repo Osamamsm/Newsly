@@ -17,7 +17,7 @@ class CategoriesGridView extends StatelessWidget {
         mainAxisSpacing: 16,
         childAspectRatio: 1.5,
       ),
-      itemCount: 10,
+      itemCount: categories.length,
       itemBuilder: (context, index) =>
           CategoryItemWidget(category: categories[index]),
     );

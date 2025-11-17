@@ -15,7 +15,7 @@ class CategoryItemWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        context.push(CategorizedNewsView.routeName);
+        context.push(CategorizedNewsView.routeName, extra: category.name);
       },
       child: Container(
         decoration: BoxDecoration(

@@ -1,7 +1,9 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:injectable/injectable.dart';
 import 'package:newsly/features/category_news/data/repos/category_news_repo.dart';
 import 'package:newsly/features/category_news/presentation/view_model/cubit/get_category_news_state.dart';
 
+@Injectable()
 class GetCategoryNewsCubit extends Cubit<GetCategoryNewsState> {
   GetCategoryNewsCubit(this._categoryNewsRepo)
     : super(GetCategoryNewsInitial());
@@ -12,7 +14,7 @@ class GetCategoryNewsCubit extends Cubit<GetCategoryNewsState> {
     emit(GetCategoryNewsLoading());
     final result = await _categoryNewsRepo.getCategoryNews(category: category);
     result.fold(
-      (failure) => emit(GetCategoryNewsError(failure.message!)),
+      (failure) => emit(GetCategoryNewsError(failure.getAllMessages())),
       (news) => emit(GetCategoryNewsLoaded(news)),
     );
   }
