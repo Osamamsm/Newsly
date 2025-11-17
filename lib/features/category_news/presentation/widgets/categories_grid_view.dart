@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:newsly/core/models/category_model.dart';
-import 'package:newsly/features/categories/presentation/widgets/category_item_widget.dart';
+import 'package:newsly/features/category_news/presentation/widgets/category_item_widget.dart';
 
 class CategoriesGridView extends StatelessWidget {
   const CategoriesGridView({super.key, required this.categories});
