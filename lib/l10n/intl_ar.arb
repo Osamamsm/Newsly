@@ -5,6 +5,7 @@
     "settings":"الإعدادات",
     "for_you":"من أجلك",
     "top_stories":"أهم العناوين",
+    "latest":"اخر الاخبار",
     "general":"عام",
     "education":"تعليم",
     "business":"أعمال",
@@ -24,5 +25,7 @@
     "manage_categories":"إدارة الفئات",
     "about":"حول",
     "about_app":"حول التطبيق",
-    "about_developer":"حول المطور"
+    "about_developer":"حول المطور",
+    "search":"بحث",
+    "search_results":"نتائج البحث"
 }

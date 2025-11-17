@@ -19,7 +19,7 @@ class CustomTabBar extends StatelessWidget {
         indicatorColor: AppColors.kPrimaryColor,
         tabs: [
           TabBarItem(text: S.of(context).for_you),
-          TabBarItem(text: S.of(context).top_stories),
+          TabBarItem(text: S.of(context).latest),
         ],
       ),
     );

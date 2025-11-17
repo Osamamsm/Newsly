@@ -14,7 +14,7 @@ class AppTextStyles {
     color: AppColors.black,
     height: 1.2,
   );
-  
+
   static const TextStyle titleBoldBlack18 = TextStyle(
     fontSize: 18,
     fontWeight: FontWeight.bold,
@@ -63,6 +63,12 @@ class AppTextStyles {
 
   static const TextStyle bodyBoldPrimary16 = TextStyle(
     fontSize: 16,
+    fontWeight: FontWeight.bold,
+    color: AppColors.kPrimaryColor,
+  );
+
+  static const TextStyle titleBoldPrimary18 = TextStyle(
+    fontSize: 18,
     fontWeight: FontWeight.bold,
     color: AppColors.kPrimaryColor,
   );

@@ -84,6 +84,11 @@ class S {
     return Intl.message('Top Stories', name: 'top_stories', desc: '', args: []);
   }
 
+  /// `Latest`
+  String get latest {
+    return Intl.message('Latest', name: 'latest', desc: '', args: []);
+  }
+
   /// `General`
   String get general {
     return Intl.message('General', name: 'general', desc: '', args: []);
@@ -199,6 +204,21 @@ class S {
     return Intl.message(
       'About Developer',
       name: 'about_developer',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Search`
+  String get search {
+    return Intl.message('Search', name: 'search', desc: '', args: []);
+  }
+
+  /// `Search Results`
+  String get search_results {
+    return Intl.message(
+      'Search Results',
+      name: 'search_results',
       desc: '',
       args: [],
     );

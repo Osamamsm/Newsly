@@ -5,6 +5,7 @@
     "settings":"Settings",
     "for_you":"For You",
     "top_stories":"Top Stories",
+    "latest":"Latest",
     "general":"General",
     "education":"Education",
     "business":"Business",
@@ -24,5 +25,7 @@
     "manage_categories":"Manage Categories",
     "about":"About",
     "about_app":"About App",
-    "about_developer":"About Developer"
+    "about_developer":"About Developer",
+    "search":"Search",
+    "search_results":"Search Results"
 }

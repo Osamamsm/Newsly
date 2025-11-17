@@ -38,6 +38,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "for_you": MessageLookupByLibrary.simpleMessage("For You"),
     "general": MessageLookupByLibrary.simpleMessage("General"),
     "health": MessageLookupByLibrary.simpleMessage("Health"),
+    "latest": MessageLookupByLibrary.simpleMessage("Latest"),
     "light_mode": MessageLookupByLibrary.simpleMessage("Light Mode"),
     "manage_categories": MessageLookupByLibrary.simpleMessage(
       "Manage Categories",
@@ -45,6 +46,8 @@ class MessageLookup extends MessageLookupByLibrary {
     "notifications": MessageLookupByLibrary.simpleMessage("Notifications"),
     "politics": MessageLookupByLibrary.simpleMessage("Politics"),
     "science": MessageLookupByLibrary.simpleMessage("Science"),
+    "search": MessageLookupByLibrary.simpleMessage("Search"),
+    "search_results": MessageLookupByLibrary.simpleMessage("Search Results"),
     "settings": MessageLookupByLibrary.simpleMessage("Settings"),
     "sports": MessageLookupByLibrary.simpleMessage("Sports"),
     "technology": MessageLookupByLibrary.simpleMessage("Technology"),
