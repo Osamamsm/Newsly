@@ -2,7 +2,7 @@ import 'package:dartz/dartz.dart';
 import 'package:injectable/injectable.dart';
 import 'package:newsly/core/models/news_model/article.dart';
 import 'package:newsly/core/networking/api_constants.dart';
-import 'package:newsly/core/networking/api_error.dart';
+import 'package:newsly/core/networking/api_error_handler.dart';
 import 'package:newsly/core/networking/api_error_model.dart';
 import 'package:newsly/core/networking/api_service.dart';
 import 'package:newsly/features/category_news/data/repos/category_news_repo.dart';
@@ -21,7 +21,6 @@ class CategoryNewsRepoImpl implements CategoryNewsRepo {
         endpoint: ApiConstants.latest,
         queries: {'category': category},
       );
-      print(category);
 
       List<Article> articles = [];
 
@@ -31,7 +30,7 @@ class CategoryNewsRepoImpl implements CategoryNewsRepo {
 
       return Right(articles);
     } catch (e) {
-      return Left(ApiError.handle(e));
+      return Left(ApiErrorHandler.handle(e));
     }
   }
 }

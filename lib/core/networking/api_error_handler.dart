@@ -3,7 +3,7 @@ import 'package:dio/dio.dart';
 import 'package:intl/intl.dart';
 import 'package:newsly/core/networking/api_error_model.dart';
 
-class ApiError {
+class ApiErrorHandler {
   late final ApiErrorModel apiErrorModel;
 
   static ApiErrorModel handle(dynamic error) {
