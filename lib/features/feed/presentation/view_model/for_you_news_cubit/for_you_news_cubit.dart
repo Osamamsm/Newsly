@@ -3,10 +3,9 @@ import 'package:injectable/injectable.dart';
 import 'package:newsly/features/feed/data/repos/feed_repo.dart';
 import 'package:newsly/features/feed/presentation/view_model/for_you_news_cubit/for_you_news_state.dart';
 
-
 @Injectable()
-class FeedCubit extends Cubit<ForYouNewsState> {
-  FeedCubit(this._feedRepo) : super(ForYouNewsInitial());
+class ForYouNewsCubit extends Cubit<ForYouNewsState> {
+  ForYouNewsCubit(this._feedRepo) : super(ForYouNewsInitial());
 
   final FeedRepo _feedRepo;
 

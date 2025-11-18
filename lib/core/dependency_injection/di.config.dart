@@ -51,7 +51,9 @@ extension GetItInjectableX on _i174.GetIt {
     gh.lazySingleton<_i199.CategoryNewsRepo>(
       () => _i1051.CategoryNewsRepoImpl(gh<_i331.ApiService>()),
     );
-    gh.factory<_i851.FeedCubit>(() => _i851.FeedCubit(gh<_i200.FeedRepo>()));
+    gh.factory<_i851.ForYouNewsCubit>(
+      () => _i851.ForYouNewsCubit(gh<_i200.FeedRepo>()),
+    );
     gh.factory<_i566.LatestNewsCubit>(
       () => _i566.LatestNewsCubit(gh<_i200.FeedRepo>()),
     );
