@@ -19,6 +19,8 @@ import 'package:newsly/features/category_news/data/repos/category_news_repo_impl
     as _i1051;
 import 'package:newsly/features/category_news/presentation/view_model/cubit/get_category_news_cubit.dart'
     as _i66;
+import 'package:newsly/features/feed/data/repos/feed_repo.dart' as _i200;
+import 'package:newsly/features/feed/data/repos/feed_repo_impl.dart' as _i871;
 import 'package:newsly/features/home/presentation/view_model/nav_bar_cubit/nav_bar_cubit.dart'
     as _i1;
 import 'package:newsly/features/search/data/repos/search_repo.dart' as _i513;
@@ -38,6 +40,9 @@ extension GetItInjectableX on _i174.GetIt {
     gh.lazySingleton<_i331.ApiService>(() => _i331.ApiService(gh<_i361.Dio>()));
     gh.lazySingleton<_i513.SearchRepo>(
       () => _i986.SearchRepoImpl(gh<_i331.ApiService>()),
+    );
+    gh.lazySingleton<_i200.FeedRepo>(
+      () => _i871.FeedRepoImpl(gh<_i331.ApiService>()),
     );
     gh.lazySingleton<_i199.CategoryNewsRepo>(
       () => _i1051.CategoryNewsRepoImpl(gh<_i331.ApiService>()),
