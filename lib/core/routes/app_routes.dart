@@ -5,6 +5,7 @@ import 'package:newsly/features/category_news/presentation/views/categorized_new
 import 'package:newsly/features/home/presentation/view_model/nav_bar_cubit/nav_bar_cubit.dart';
 import 'package:newsly/features/home/presentation/views/home_view.dart';
 import 'package:newsly/features/news_details/presentation/views/news_details_view.dart';
+import 'package:newsly/features/search/presentation/view_model/cubit/search_cubit.dart';
 import 'package:newsly/features/search/presentation/views/search_view.dart';
 
 final router = GoRouter(
@@ -27,7 +28,10 @@ final router = GoRouter(
     ),
     GoRoute(
       path: SearchView.routeName,
-      builder: (context, state) => const SearchView(),
+      builder: (context, state) => BlocProvider(
+        create: (context) => getIt<SearchCubit>(),
+        child: const SearchView(),
+      ),
     ),
   ],
 );

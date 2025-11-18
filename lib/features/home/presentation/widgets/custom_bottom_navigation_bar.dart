@@ -21,7 +21,7 @@ class CustomButtonNavigationBar extends StatelessWidget {
             context.read<NavBarCubit>().updateIndex(value);
           },
           kIconSize: 20,
-          kBottomRadius: 5,
+          kBottomRadius: 43,
           showLabel: false,
           durationInMilliSeconds: 100,
           color: AppColors.kPrimaryColor,

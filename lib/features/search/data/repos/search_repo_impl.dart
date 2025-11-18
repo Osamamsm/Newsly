@@ -7,20 +7,19 @@ import 'package:newsly/core/networking/api_error_model.dart';
 import 'package:newsly/core/networking/api_service.dart';
 import 'package:newsly/features/search/data/repos/search_repo.dart';
 
-
-@LazySingleton(as:SearchRepo)
+@LazySingleton(as: SearchRepo)
 class SearchRepoImpl implements SearchRepo {
   final ApiService _apiService;
 
   SearchRepoImpl(this._apiService);
   @override
   Future<Either<ApiErrorModel, List<Article>>> getSearchResults({
-    required String searchText,
+    required String query,
   }) async {
     try {
       var response = await _apiService.get(
         endpoint: ApiConstants.latest,
-        queries: {"q": searchText},
+        queries: {"q": query},
       );
 
       List<Article> articles = [];

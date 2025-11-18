@@ -14,6 +14,7 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       appBar: AppBar(
         title: const Text('Newsly', style: AppTextStyles.titleBoldWhite18),
         backgroundColor: AppColors.kPrimaryColor,

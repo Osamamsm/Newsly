@@ -4,6 +4,6 @@ import 'package:newsly/core/networking/api_error_model.dart';
 
 abstract class SearchRepo {
   Future<Either<ApiErrorModel, List<Article>>> getSearchResults({
-    required String searchText,
+    required String query,
   });
 }

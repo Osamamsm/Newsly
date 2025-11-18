@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:injectable/injectable.dart';
 import 'package:newsly/features/search/data/repos/search_repo.dart';
@@ -9,9 +10,23 @@ class SearchCubit extends Cubit<SearchState> {
 
   final SearchRepo _searchRepo;
 
-  Future<void> searchNews(String searchText) async {
+  Timer? _searchDebounceTimer;
+
+  void onQueryChanged(String query) {
+    _searchDebounceTimer?.cancel();
+
+    _searchDebounceTimer = Timer(Duration(milliseconds: 500), () {
+      if (query.trim().isNotEmpty) {
+        _searchNews(query);
+      } else {
+        emit(SearchInitial());
+      }
+    });
+  }
+
+  Future<void> _searchNews(String query) async {
     emit(SearchLoading());
-    final result = await _searchRepo.getSearchResults(searchText: searchText);
+    final result = await _searchRepo.getSearchResults(query: query);
     result.fold(
       (failure) => emit(SearchFailed(failure.getAllMessages())),
       (news) => emit(SearchSucceeded(news)),
