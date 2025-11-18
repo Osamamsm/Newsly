@@ -21,6 +21,9 @@ import 'package:newsly/features/category_news/presentation/view_model/cubit/get_
     as _i66;
 import 'package:newsly/features/home/presentation/view_model/nav_bar_cubit/nav_bar_cubit.dart'
     as _i1;
+import 'package:newsly/features/search/data/repos/search_repo.dart' as _i513;
+import 'package:newsly/features/search/data/repos/search_repo_impl.dart'
+    as _i986;
 
 extension GetItInjectableX on _i174.GetIt {
   // initializes the registration of main-scope dependencies inside of GetIt
@@ -31,6 +34,9 @@ extension GetItInjectableX on _i174.GetIt {
     final gh = _i526.GetItHelper(this, environment, environmentFilter);
     gh.factory<_i1.NavBarCubit>(() => _i1.NavBarCubit());
     gh.lazySingleton<_i331.ApiService>(() => _i331.ApiService(gh<_i361.Dio>()));
+    gh.lazySingleton<_i513.SearchRepo>(
+      () => _i986.SearchRepoImpl(gh<_i331.ApiService>()),
+    );
     gh.lazySingleton<_i199.CategoryNewsRepo>(
       () => _i1051.CategoryNewsRepoImpl(gh<_i331.ApiService>()),
     );
