@@ -27,6 +27,12 @@ import 'package:newsly/features/feed/presentation/view_model/latest_news_cubit/l
     as _i566;
 import 'package:newsly/features/home/presentation/view_model/nav_bar_cubit/nav_bar_cubit.dart'
     as _i1;
+import 'package:newsly/features/news_details/data/repos/similar_news_repo.dart'
+    as _i191;
+import 'package:newsly/features/news_details/data/repos/similar_news_repo_impl.dart'
+    as _i306;
+import 'package:newsly/features/news_details/presentation/view_model/similar_news_cubit/similar_news_cubit.dart'
+    as _i825;
 import 'package:newsly/features/search/data/repos/search_repo.dart' as _i513;
 import 'package:newsly/features/search/data/repos/search_repo_impl.dart'
     as _i986;
@@ -45,8 +51,14 @@ extension GetItInjectableX on _i174.GetIt {
     gh.lazySingleton<_i513.SearchRepo>(
       () => _i986.SearchRepoImpl(gh<_i331.ApiService>()),
     );
+    gh.lazySingleton<_i191.SimilarNewsRepo>(
+      () => _i306.SimilarNewsRepoImpl(gh<_i331.ApiService>()),
+    );
     gh.lazySingleton<_i200.FeedRepo>(
       () => _i871.FeedRepoImpl(gh<_i331.ApiService>()),
+    );
+    gh.factory<_i825.SimilarNewsCubit>(
+      () => _i825.SimilarNewsCubit(gh<_i191.SimilarNewsRepo>()),
     );
     gh.lazySingleton<_i199.CategoryNewsRepo>(
       () => _i1051.CategoryNewsRepoImpl(gh<_i331.ApiService>()),
