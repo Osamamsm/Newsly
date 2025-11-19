@@ -10,7 +10,8 @@ class BookmarksBody extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(15.0),
       child: ArticlesListView(
-        itemBuilder: (context) => BookMarkedArticleWidget(),
+        articles: [],
+        itemBuilder: (article) => BookMarkedArticleWidget(),
       ),
     );
   }

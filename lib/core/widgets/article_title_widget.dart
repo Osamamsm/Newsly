@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:newsly/generated/l10n.dart';
 
 class ArticleTitleWidget extends StatelessWidget {
   const ArticleTitleWidget({
@@ -9,7 +10,7 @@ class ArticleTitleWidget extends StatelessWidget {
     required this.title,
   });
 
-  final String title;
+  final String? title;
   final int maxLines;
   final TextStyle style;
   final double horizontalPadding;
@@ -18,7 +19,7 @@ class ArticleTitleWidget extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: horizontalPadding),
       child: Text(
-        title,
+        title ?? S.of(context).unavailable,
         textAlign: TextAlign.start,
         maxLines: maxLines,
         overflow: TextOverflow.ellipsis,

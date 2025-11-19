@@ -27,5 +27,8 @@
     "about_app":"حول التطبيق",
     "about_developer":"حول المطور",
     "search":"بحث",
-    "search_results":"نتائج البحث"
+    "search_results":"نتائج البحث",
+    "no_content_available":"لا يوجد محتوى",
+    "unavailable":"غير متوفر",
+    "recently":"مؤخرا"
 }

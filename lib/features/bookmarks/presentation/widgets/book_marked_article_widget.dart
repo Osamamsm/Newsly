@@ -42,7 +42,7 @@ class BookMarkedArticleWidget extends StatelessWidget {
                 vGap(4),
                 ArticleDescriptionWidget(),
                 vGap(8),
-                ArticleMetaRow(horizontalPadding: 10),
+                ArticleMetaRow(horizontalPadding: 10, source: "filgoal",pubDate: "2025-11-18 05:48:51",),
               ],
             ),
           ),
@@ -50,7 +50,12 @@ class BookMarkedArticleWidget extends StatelessWidget {
           hGap(12),
           ClipRRect(
             borderRadius: BorderRadius.circular(16),
-            child: ArticleImageWidget(height: 100, width: 100),
+            child: ArticleImageWidget(
+              height: 100,
+              width: 100,
+              imageUrl:
+                  "https://www.ahlynews.com/wp-content/uploads/2025/11/%D8%AD%D8%A7%D9%85%D8%AF-%D8%AD%D9%85%D8%AF%D8%A7%D9%86-%D9%84%D8%A7%D8%B9%D8%A8-%D9%88%D8%B3%D8%B7-%D8%A8%D8%AA%D8%B1%D9%88%D8%AC%D9%8A%D8%AA-1-150x150.jpg",
+            ),
           ),
         ],
       ),

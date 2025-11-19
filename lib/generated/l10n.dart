@@ -223,6 +223,26 @@ class S {
       args: [],
     );
   }
+
+  /// `No Content Available`
+  String get no_content_available {
+    return Intl.message(
+      'No Content Available',
+      name: 'no_content_available',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Unavailable`
+  String get unavailable {
+    return Intl.message('Unavailable', name: 'unavailable', desc: '', args: []);
+  }
+
+  /// `Recently`
+  String get recently {
+    return Intl.message('Recently', name: 'recently', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

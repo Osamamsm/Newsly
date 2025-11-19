@@ -43,8 +43,12 @@ class MessageLookup extends MessageLookupByLibrary {
     "manage_categories": MessageLookupByLibrary.simpleMessage(
       "Manage Categories",
     ),
+    "no_content_available": MessageLookupByLibrary.simpleMessage(
+      "No Content Available",
+    ),
     "notifications": MessageLookupByLibrary.simpleMessage("Notifications"),
     "politics": MessageLookupByLibrary.simpleMessage("Politics"),
+    "recently": MessageLookupByLibrary.simpleMessage("Recently"),
     "science": MessageLookupByLibrary.simpleMessage("Science"),
     "search": MessageLookupByLibrary.simpleMessage("Search"),
     "search_results": MessageLookupByLibrary.simpleMessage("Search Results"),
@@ -53,5 +57,6 @@ class MessageLookup extends MessageLookupByLibrary {
     "technology": MessageLookupByLibrary.simpleMessage("Technology"),
     "top_stories": MessageLookupByLibrary.simpleMessage("Top Stories"),
     "travel": MessageLookupByLibrary.simpleMessage("Travel"),
+    "unavailable": MessageLookupByLibrary.simpleMessage("Unavailable"),
   };
 }

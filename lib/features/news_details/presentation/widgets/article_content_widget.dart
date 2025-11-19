@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:newsly/core/constants/app_text_styles.dart';
+import 'package:newsly/generated/l10n.dart';
 
 class ArticleContentWidget extends StatelessWidget {
-  const ArticleContentWidget({super.key});
+  const ArticleContentWidget({super.key, required this.content});
 
+  final String? content;
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20.0),
       child: Text(
-        "Octopus Energy says that certain customers could receive up to 90% off their electricity bills if they install a specific device at home. Octopus Energy is highly regarded as one of the UK's leading energy providers, having won numerous industry awards, achieved high customer satisfaction scores, offered competitive prices, and shown a commitment to renewable energy. The supplier boasts some of the most competitive prices in the UK, when compared to other mainstream suppliers like British Gas, E.ON, OVO, EDF. However, whether it is the absolute cheapest really depends on your circumstances, how much energy you consume, and which plan you choose. Like its competitors, it offers a range of tariffs for customers. However, it is the only large energy supplier to price its standard variable tariff, Flexible Octopus, below the Ofgem Energy Price Cap. It also provides other schemes, including free electricity during certain, unpredictable times of the day, and 90% off electricity for certain customers. For those who participate in the supplier's solar power scheme , the company claims they stand to make significant savings on their bills. Octopus places a strong emphasis on renewable energy, often rewarding customers who opt for green energy. The company even suggests customers could earn up to £300 profit a year with its Intelligent Octopus Flux plan, reports the Mirror . The website states: \"Get smarter and save more, when you sell electricity on our solar smart tariffs. With battery storage, make up to £300 profit a year on the Intelligent Octopus Flux tariff. \"Pay in one go or spread the cost with flexible payment options. Finance your solar system across easy monthly instalments. All of our solar panels come with a 25-year product warranty, plus warranties on our batteries and workmanship too.\" To receive a quote, input your postcode on the Octopus Energy website to discover estimated installation costs. It further explains: \"Request a tailored quote from our solar experts, including everything you need for a standard installation. We'll sort everything, from installation to setting you up on one of our export tariffs that suit different needs.\" Clarifying its claim of 90% off with solar and battery power, Octopus Energy says: \"This is the electricity bill saving for a medium use home, with a 10 panel and 5kWh battery system on a standard tariff with our fixed outgoing rate (£81), compared to no solar installation on a standard tariff (£904). This is a saving of £823 or 91% of their total electricity bill.\" For an Octopus solar installation, you must own your home and have a clear space on a pitched roof that can accommodate at least two solar panels. The company is currently unable to install solar panels for flats or properties with a three-phase electricity meter. A solar system can enhance the value of your property. Research by the Department of Land Economy at the University of Cambridge suggests a 16% value uplift for new-build homes with sufficient solar and battery storage to eliminate energy bills. An additional study of more than five million existing properties suggests a 2-3% value increase for homes equipped with solar panels or heat pumps, compared to similar gas-heated homes. This is according to the Sustainable Markets Initiative: Cleantech Homes report, 2024 .",
+        content ?? S.of(context).no_content_available,
         style: AppTextStyles.bodyRegularBlack14,
       ),
     );

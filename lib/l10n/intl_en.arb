@@ -27,5 +27,8 @@
     "about_app":"About App",
     "about_developer":"About Developer",
     "search":"Search",
-    "search_results":"Search Results"
+    "search_results":"Search Results",
+    "no_content_available":"No Content Available",
+    "unavailable":"Unavailable",
+    "recently":"Recently"
 }

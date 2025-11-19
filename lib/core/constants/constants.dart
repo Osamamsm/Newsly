@@ -84,10 +84,9 @@ class Constants {
         iconData: FontAwesomeIcons.bowlFood,
       ),
       CategoryModel(
-        name: S.of(context).travel,
-        iconData: FontAwesomeIcons.plane,
+        name: S.of(context).crime,
+        iconData: FontAwesomeIcons.handcuffs,
       ),
-      CategoryModel(name: S.of(context).crime, iconData: FontAwesomeIcons.handcuffs)
     ];
   }
 }

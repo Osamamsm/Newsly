@@ -18,8 +18,9 @@ class ApiService {
       "$_baseUrl$endpoint",
       queryParameters: {
         'apiKey': _apiKey,
-        'country':'eg',
-        'language':'ar', 
+        'removeduplicate':"1",
+        'country':'us',
+        'language':'en', 
         ...?queries,
       },
     );

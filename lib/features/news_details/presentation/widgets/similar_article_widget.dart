@@ -26,10 +26,16 @@ class SimilarArticleWidget extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            ArticleImageWidget(height: 120, width: 220),
+            ArticleImageWidget(
+              height: 120,
+              width: 220,
+              imageUrl:
+                  "https://www.ahlynews.com/wp-content/uploads/2025/11/%D8%AD%D8%A7%D9%85%D8%AF-%D8%AD%D9%85%D8%AF%D8%A7%D9%86-%D9%84%D8%A7%D8%B9%D8%A8-%D9%88%D8%B3%D8%B7-%D8%A8%D8%AA%D8%B1%D9%88%D8%AC%D9%8A%D8%AA-1-150x150.jpg",
+            ),
             vGap(15),
             ArticleTitleWidget(
-              title: "Nearly 1 million bottles of prosecco recalled from Costco",
+              title:
+                  "Nearly 1 million bottles of prosecco recalled from Costco",
               horizontalPadding: 20,
               style: AppTextStyles.titleBoldBlack16,
               maxLines: 2,
