@@ -16,7 +16,7 @@ class SimilarArticleWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        context.push(NewsDetailsView.routeName);
+        context.push(NewsDetailsView.routeName,extra: article);
       },
       child: Container(
         width: 220,
