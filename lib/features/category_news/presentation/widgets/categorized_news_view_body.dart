@@ -7,8 +7,9 @@ import 'package:newsly/features/category_news/presentation/view_model/cubit/get_
 import 'package:newsly/features/category_news/presentation/view_model/cubit/get_category_news_state.dart';
 
 class CategorizedNewsViewBody extends StatelessWidget {
-  const CategorizedNewsViewBody({super.key});
+  const CategorizedNewsViewBody({super.key, required this.category});
 
+  final String category;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -17,6 +18,9 @@ class CategorizedNewsViewBody extends StatelessWidget {
         builder: (context, state) {
           if (state is GetCategoryNewsLoaded) {
             return ArticlesListView(
+              onRefresh: () => context
+                  .read<GetCategoryNewsCubit>()
+                  .getCategoryNews(category),
               articles: state.articles,
               itemBuilder: (article) => ArticleTileWidget(article: article),
             );

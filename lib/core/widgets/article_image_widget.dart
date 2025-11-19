@@ -22,7 +22,7 @@ class ArticleImageWidget extends StatelessWidget {
       errorBuilder: (context, error, stackTrace) {
         return Container(
           color: Colors.grey.shade200,
-          child: Icon(Icons.broken_image, size: 200, color: Colors.grey),
+          child: Icon(Icons.broken_image, size: 120, color: Colors.grey),
         );
       },
     );

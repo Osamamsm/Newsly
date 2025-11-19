@@ -15,6 +15,7 @@ class LatestTabBarView extends StatelessWidget {
       builder: (context, state) {
         if (state is LatestNewsLoaded) {
           return ArticlesListView(
+            onRefresh: () => context.read<LatestNewsCubit>().getLatestNews(),
             articles: state.articles,
             itemBuilder: (article) => ArticleTileWidget(article: article),
           );

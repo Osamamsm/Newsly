@@ -19,7 +19,7 @@ class CategorizedNewsView extends StatelessWidget {
       child: Scaffold(
         backgroundColor: AppColors.kPrimaryLightColor,
         appBar: AppBar(backgroundColor: AppColors.kPrimaryColor),
-        body: CategorizedNewsViewBody(),
+        body: CategorizedNewsViewBody(category: category,),
       ),
     );
   }

@@ -7,9 +7,7 @@ import 'package:newsly/features/search/presentation/view_model/cubit/search_cubi
 import 'package:newsly/features/search/presentation/view_model/cubit/search_state.dart';
 
 class SearchResultsWidget extends StatelessWidget {
-  const SearchResultsWidget({
-    super.key,
-  });
+  const SearchResultsWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,9 +16,9 @@ class SearchResultsWidget extends StatelessWidget {
         if (state is SearchSucceeded) {
           return Expanded(
             child: ArticlesListView(
+              onRefresh: () async {},
               articles: state.articles,
-              itemBuilder: (article) =>
-                  ArticleTileWidget(article: article),
+              itemBuilder: (article) => ArticleTileWidget(article: article),
             ),
           );
         } else if (state is SearchFailed) {

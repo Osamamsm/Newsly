@@ -17,6 +17,7 @@ class ForYouTabBarView extends StatelessWidget {
       builder: (BuildContext context, ForYouNewsState state) {
         if (state is ForYouNewsLoaded) {
           return ArticlesListView(
+            onRefresh: ()=>context.read<ForYouNewsCubit>().getForYouNews(['Sports']),
             articles: state.articles,
             itemBuilder: (article) =>
                 ArticleTileWidget(article: article),
