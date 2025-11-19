@@ -30,5 +30,7 @@
     "search_results":"Search Results",
     "no_content_available":"No Content Available",
     "unavailable":"Unavailable",
-    "recently":"Recently"
+    "recently":"Recently",
+    "similar_articles":"Similar Articles",
+    "no_similar_articles":"No Similar Articles"
 }

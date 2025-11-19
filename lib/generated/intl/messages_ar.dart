@@ -44,6 +44,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "no_content_available": MessageLookupByLibrary.simpleMessage(
       "لا يوجد محتوى",
     ),
+    "no_similar_articles": MessageLookupByLibrary.simpleMessage(
+      "لا يوجد مقالات مشابهة",
+    ),
     "notifications": MessageLookupByLibrary.simpleMessage("إشعارات"),
     "politics": MessageLookupByLibrary.simpleMessage("سياسة"),
     "recently": MessageLookupByLibrary.simpleMessage("مؤخرا"),
@@ -51,6 +54,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "search": MessageLookupByLibrary.simpleMessage("بحث"),
     "search_results": MessageLookupByLibrary.simpleMessage("نتائج البحث"),
     "settings": MessageLookupByLibrary.simpleMessage("الإعدادات"),
+    "similar_articles": MessageLookupByLibrary.simpleMessage(
+      "المقالات المشابهة",
+    ),
     "sports": MessageLookupByLibrary.simpleMessage("رياضة"),
     "technology": MessageLookupByLibrary.simpleMessage("تكنولوجيا"),
     "top_stories": MessageLookupByLibrary.simpleMessage("أهم العناوين"),

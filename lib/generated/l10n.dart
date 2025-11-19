@@ -243,6 +243,26 @@ class S {
   String get recently {
     return Intl.message('Recently', name: 'recently', desc: '', args: []);
   }
+
+  /// `Similar Articles`
+  String get similar_articles {
+    return Intl.message(
+      'Similar Articles',
+      name: 'similar_articles',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `No Similar Articles`
+  String get no_similar_articles {
+    return Intl.message(
+      'No Similar Articles',
+      name: 'no_similar_articles',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

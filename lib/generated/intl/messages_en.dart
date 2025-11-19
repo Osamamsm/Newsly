@@ -46,6 +46,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "no_content_available": MessageLookupByLibrary.simpleMessage(
       "No Content Available",
     ),
+    "no_similar_articles": MessageLookupByLibrary.simpleMessage(
+      "No Similar Articles",
+    ),
     "notifications": MessageLookupByLibrary.simpleMessage("Notifications"),
     "politics": MessageLookupByLibrary.simpleMessage("Politics"),
     "recently": MessageLookupByLibrary.simpleMessage("Recently"),
@@ -53,6 +56,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "search": MessageLookupByLibrary.simpleMessage("Search"),
     "search_results": MessageLookupByLibrary.simpleMessage("Search Results"),
     "settings": MessageLookupByLibrary.simpleMessage("Settings"),
+    "similar_articles": MessageLookupByLibrary.simpleMessage(
+      "Similar Articles",
+    ),
     "sports": MessageLookupByLibrary.simpleMessage("Sports"),
     "technology": MessageLookupByLibrary.simpleMessage("Technology"),
     "top_stories": MessageLookupByLibrary.simpleMessage("Top Stories"),

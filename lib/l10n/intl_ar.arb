@@ -30,5 +30,7 @@
     "search_results":"نتائج البحث",
     "no_content_available":"لا يوجد محتوى",
     "unavailable":"غير متوفر",
-    "recently":"مؤخرا"
+    "recently":"مؤخرا",
+    "similar_articles":"المقالات المشابهة",
+    "no_similar_articles":"لا يوجد مقالات مشابهة"
 }
