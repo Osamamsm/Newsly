@@ -7,6 +7,7 @@ import 'package:newsly/features/home/presentation/views/home_view.dart';
 import 'package:newsly/features/news_details/presentation/views/news_details_view.dart';
 import 'package:newsly/features/search/presentation/view_model/cubit/search_cubit.dart';
 import 'package:newsly/features/search/presentation/views/search_view.dart';
+import 'package:newsly/features/settings/presentation/views/manage_interests_view.dart';
 
 final router = GoRouter(
   initialLocation: HomeView.routeName,
@@ -33,5 +34,9 @@ final router = GoRouter(
         child: const SearchView(),
       ),
     ),
+    GoRoute(
+      path: ManageInterestsView.routeName,
+      builder: (context, state) => const ManageInterestsView(),
+    )
   ],
 );

@@ -179,11 +179,11 @@ class S {
     );
   }
 
-  /// `Manage Categories`
-  String get manage_categories {
+  /// `Manage Interests`
+  String get manage_interests {
     return Intl.message(
-      'Manage Categories',
-      name: 'manage_categories',
+      'Manage Interests',
+      name: 'manage_interests',
       desc: '',
       args: [],
     );
@@ -262,6 +262,11 @@ class S {
       desc: '',
       args: [],
     );
+  }
+
+  /// `Save`
+  String get save {
+    return Intl.message('Save', name: 'save', desc: '', args: []);
   }
 }
 

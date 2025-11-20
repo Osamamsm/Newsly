@@ -22,7 +22,7 @@
     "dark_mode":"Dark Mode",
     "light_mode":"Light Mode",
     "notifications":"Notifications",
-    "manage_categories":"Manage Categories",
+    "manage_interests":"Manage Interests",
     "about":"About",
     "about_app":"About App",
     "about_developer":"About Developer",
@@ -32,5 +32,6 @@
     "unavailable":"Unavailable",
     "recently":"Recently",
     "similar_articles":"Similar Articles",
-    "no_similar_articles":"No Similar Articles"
+    "no_similar_articles":"No Similar Articles",
+    "save":"Save"
 }

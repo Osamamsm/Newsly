@@ -4,9 +4,7 @@ import 'package:newsly/features/settings/presentation/widgets/setting_tile_widge
 import 'package:newsly/generated/l10n.dart';
 
 class ThemeSwitchTileWidget extends StatelessWidget {
-  const ThemeSwitchTileWidget({
-    super.key,
-  });
+  const ThemeSwitchTileWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

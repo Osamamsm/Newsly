@@ -8,18 +8,20 @@ class SettingTileWidget extends StatelessWidget {
     required this.icon,
     this.trailingWidget,
     required this.title,
+    this.onPressed,
   });
 
   final String title;
   final IconData icon;
   final Widget? trailingWidget;
+  final VoidCallback? onPressed;
   @override
   Widget build(BuildContext context) {
     return ListTile(
       contentPadding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       tileColor: AppColors.white,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-      leading: Container( 
+      leading: Container(
         padding: const EdgeInsets.all(10),
         decoration: BoxDecoration(
           color: AppColors.kPrimaryLightColor,
@@ -30,7 +32,11 @@ class SettingTileWidget extends StatelessWidget {
       title: Text(title, style: AppTextStyles.primaryMedium18),
       trailing:
           trailingWidget ??
-          Icon(Icons.arrow_forward_ios_rounded, color: AppColors.kPrimaryColor),
+          IconButton(
+            icon: Icon(Icons.arrow_forward_ios_rounded),
+            color: AppColors.kPrimaryColor,
+            onPressed: onPressed,
+          ),
     );
   }
 }

@@ -5,9 +5,7 @@ import 'package:newsly/features/settings/presentation/widgets/setting_tile_widge
 import 'package:newsly/generated/l10n.dart';
 
 class AboutAppSection extends StatelessWidget {
-  const AboutAppSection({
-    super.key,
-  });
+  const AboutAppSection({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,11 +17,13 @@ class AboutAppSection extends StatelessWidget {
         SettingTileWidget(
           icon: Icons.info_outline,
           title: S.of(context).about_app,
+          onPressed: () {},
         ),
         vGap(10),
         SettingTileWidget(
           icon: Icons.logo_dev_outlined,
           title: S.of(context).about_developer,
+          onPressed: () {},
         ),
       ],
     );

@@ -22,7 +22,7 @@
     "dark_mode":"الوضع الداكن",
     "light_mode":"الوضع الفاتح",
     "notifications":"إشعارات",
-    "manage_categories":"إدارة الفئات",
+    "manage_interests":"إدارة التفضيلات",
     "about":"حول",
     "about_app":"حول التطبيق",
     "about_developer":"حول المطور",
@@ -32,5 +32,6 @@
     "unavailable":"غير متوفر",
     "recently":"مؤخرا",
     "similar_articles":"المقالات المشابهة",
-    "no_similar_articles":"لا يوجد مقالات مشابهة"
+    "no_similar_articles":"لا يوجد مقالات مشابهة",
+    "save":"حفظ"
 }
