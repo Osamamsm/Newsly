@@ -5,13 +5,13 @@ import 'package:newsly/features/on_boarding/presentation/view_model/cubit/on_boa
 
 @injectable
 class OnBoardingCubit extends Cubit<OnBoardingState> {
-  OnBoardingCubit(this._repo, {this.totalPages = 3})
+  OnBoardingCubit(this._repo,@factoryParam this.totalPages )
     : super(OnBoardingState(currentPage: 0, isLastPage: false));
 
   final OnBoardingRepo _repo;
   final int totalPages;
 
-  void changePage(int index) {
+  void pageChanged(int index) {
     emit(
       OnBoardingState(currentPage: index, isLastPage: index == totalPages - 1),
     );

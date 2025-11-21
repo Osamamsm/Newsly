@@ -31,11 +31,15 @@ class MessageLookup extends MessageLookupByLibrary {
     "categories": MessageLookupByLibrary.simpleMessage("فئات"),
     "crime": MessageLookupByLibrary.simpleMessage("جريمة"),
     "dark_mode": MessageLookupByLibrary.simpleMessage("الوضع الداكن"),
+    "done": MessageLookupByLibrary.simpleMessage("تم"),
     "education": MessageLookupByLibrary.simpleMessage("تعليم"),
     "entertainment": MessageLookupByLibrary.simpleMessage("ترفيه"),
     "feed": MessageLookupByLibrary.simpleMessage("الموجز"),
-    "first_on_boarding_text": MessageLookupByLibrary.simpleMessage(
+    "first_on_boarding_desc_text": MessageLookupByLibrary.simpleMessage(
       "اتبع المواضيع التي تهمك وأخفِ ما لا يهمك لإنشاء تجربة إخبارية تناسبك.",
+    ),
+    "first_on_boarding_title_text": MessageLookupByLibrary.simpleMessage(
+      "خصّص موجزك",
     ),
     "food": MessageLookupByLibrary.simpleMessage("طعام"),
     "for_you": MessageLookupByLibrary.simpleMessage("من أجلك"),
@@ -58,8 +62,11 @@ class MessageLookup extends MessageLookupByLibrary {
     "science": MessageLookupByLibrary.simpleMessage("علوم"),
     "search": MessageLookupByLibrary.simpleMessage("بحث"),
     "search_results": MessageLookupByLibrary.simpleMessage("نتائج البحث"),
-    "second_on_boarding_text": MessageLookupByLibrary.simpleMessage(
+    "second_on_boarding_desc_text": MessageLookupByLibrary.simpleMessage(
       "ابحث عن المواضيع التي تعجبك وقم بتخصيص موجز الأخبار الخاص بك بالفئات التي تهمك.",
+    ),
+    "second_on_boarding_title_text": MessageLookupByLibrary.simpleMessage(
+      "أخبارك، طريقتك",
     ),
     "settings": MessageLookupByLibrary.simpleMessage("الإعدادات"),
     "similar_articles": MessageLookupByLibrary.simpleMessage(
@@ -68,8 +75,11 @@ class MessageLookup extends MessageLookupByLibrary {
     "skip": MessageLookupByLibrary.simpleMessage("تخطي"),
     "sports": MessageLookupByLibrary.simpleMessage("رياضة"),
     "technology": MessageLookupByLibrary.simpleMessage("تكنولوجيا"),
-    "third_on_boarding_text": MessageLookupByLibrary.simpleMessage(
+    "third_on_boarding_desc_text": MessageLookupByLibrary.simpleMessage(
       "لا تفقد أي مقال شيق بعد الآن.أضف القصص إلى المفضلة بنقرة واحدة، واقرأها في أي وقت، حتى بدون اتصال بالإنترنت",
+    ),
+    "third_on_boarding_title_text": MessageLookupByLibrary.simpleMessage(
+      "لا تفقد قصة أبدًا",
     ),
     "top_stories": MessageLookupByLibrary.simpleMessage("أهم العناوين"),
     "travel": MessageLookupByLibrary.simpleMessage("سفر"),

@@ -72,11 +72,9 @@ extension GetItInjectableX on _i174.GetIt {
     gh.lazySingleton<_i687.OnBoardingRepo>(
       () => _i1042.OnBoardingRepoImpl(gh<_i460.SharedPreferences>()),
     );
-    gh.factory<_i687.OnBoardingCubit>(
-      () => _i687.OnBoardingCubit(
-        gh<_i687.OnBoardingRepo>(),
-        totalPages: gh<int>(),
-      ),
+    gh.factoryParam<_i687.OnBoardingCubit, int, dynamic>(
+      (totalPages, _) =>
+          _i687.OnBoardingCubit(gh<_i687.OnBoardingRepo>(), totalPages),
     );
     gh.lazySingleton<_i655.UserPreferencesHelper>(
       () => _i655.UserPreferencesHelper(gh<_i460.SharedPreferences>()),

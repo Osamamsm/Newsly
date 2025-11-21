@@ -36,6 +36,13 @@ class AppTextStyles {
     height: 1.2,
   );
 
+  static const TextStyle titleBoldBlack26 = TextStyle(
+    fontSize: 26,
+    fontWeight: FontWeight.bold,
+    color: AppColors.black,
+    height: 1.4,
+  );
+
   static const TextStyle titleBoldWhite18 = TextStyle(
     fontSize: 18,
     fontWeight: FontWeight.bold,
@@ -47,6 +54,13 @@ class AppTextStyles {
     fontSize: 14,
     fontWeight: FontWeight.w500,
     color: AppColors.grey,
+  );
+
+  static TextStyle bodyMediumDarkGrey18 = TextStyle(
+    fontSize: 18,
+    fontWeight: FontWeight.w300,
+    color: AppColors.darkGrey,
+    height: 1.2,
   );
 
   static TextStyle bodyMediumDarkGrey14 = TextStyle(

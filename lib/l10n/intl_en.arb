@@ -36,7 +36,11 @@
     "save":"Save",
     "skip":"Skip",
     "next":"Next",
-    "first_on_boarding_text":"Follow the topics you care about and hide \n what you don't , to create a news \n experience that is relevant to you.",
-    "second_on_boarding_text":"Search for topics you love and \n customize your feed with categories \n that matter to you.",
-    "third_on_boarding_text":"Never lose an interesting article again. \n Bookmark stories with a single tap and \n read them anytime, even offline."
+    "done":"Done",
+    "first_on_boarding_title_text":"Personalize Your \n Feed",
+    "second_on_boarding_title_text":"Your News, Your Way",
+    "third_on_boarding_title_text":"Never Lose a Story",
+    "first_on_boarding_desc_text":"Follow the topics you care about and hide what you don't ,\n to create a news experience that is relevant to you.",
+    "second_on_boarding_desc_text":"Search for topics you love and \n customize your feed with categories \n that matter to you.",
+    "third_on_boarding_desc_text":"Never lose an interesting article again. \n Bookmark stories with a single tap and \n read them anytime, even offline."
 }

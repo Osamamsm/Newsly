@@ -1,5 +1,6 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
+import 'package:newsly/core/constants/constants.dart';
 import 'package:newsly/core/dependency_injection/di.dart';
 import 'package:newsly/features/category_news/presentation/views/categorized_news_view.dart';
 import 'package:newsly/features/home/presentation/view_model/nav_bar_cubit/nav_bar_cubit.dart';
@@ -37,7 +38,8 @@ final router = GoRouter(
     GoRoute(
       path: OnBoardingView.routeName,
       builder: (context, state) => BlocProvider(
-        create: (context) => getIt<OnBoardingCubit>(),
+        create: (context) =>
+            getIt<OnBoardingCubit>(param1: Constants.onBoardingPages.length),
         child: OnBoardingView(),
       ),
     ),

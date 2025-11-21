@@ -279,31 +279,66 @@ class S {
     return Intl.message('Next', name: 'next', desc: '', args: []);
   }
 
-  /// `Follow the topics you care about and hide \n what you don't , to create a news \n experience that is relevant to you.`
-  String get first_on_boarding_text {
+  /// `Done`
+  String get done {
+    return Intl.message('Done', name: 'done', desc: '', args: []);
+  }
+
+  /// `Personalize Your \n Feed`
+  String get first_on_boarding_title_text {
     return Intl.message(
-      'Follow the topics you care about and hide \n what you don\'t , to create a news \n experience that is relevant to you.',
-      name: 'first_on_boarding_text',
+      'Personalize Your \n Feed',
+      name: 'first_on_boarding_title_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Your News, Your Way`
+  String get second_on_boarding_title_text {
+    return Intl.message(
+      'Your News, Your Way',
+      name: 'second_on_boarding_title_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Never Lose a Story`
+  String get third_on_boarding_title_text {
+    return Intl.message(
+      'Never Lose a Story',
+      name: 'third_on_boarding_title_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Follow the topics you care about and hide what you don't ,\n to create a news experience that is relevant to you.`
+  String get first_on_boarding_desc_text {
+    return Intl.message(
+      'Follow the topics you care about and hide what you don\'t ,\n to create a news experience that is relevant to you.',
+      name: 'first_on_boarding_desc_text',
       desc: '',
       args: [],
     );
   }
 
   /// `Search for topics you love and \n customize your feed with categories \n that matter to you.`
-  String get second_on_boarding_text {
+  String get second_on_boarding_desc_text {
     return Intl.message(
       'Search for topics you love and \n customize your feed with categories \n that matter to you.',
-      name: 'second_on_boarding_text',
+      name: 'second_on_boarding_desc_text',
       desc: '',
       args: [],
     );
   }
 
   /// `Never lose an interesting article again. \n Bookmark stories with a single tap and \n read them anytime, even offline.`
-  String get third_on_boarding_text {
+  String get third_on_boarding_desc_text {
     return Intl.message(
       'Never lose an interesting article again. \n Bookmark stories with a single tap and \n read them anytime, even offline.',
-      name: 'third_on_boarding_text',
+      name: 'third_on_boarding_desc_text',
       desc: '',
       args: [],
     );
