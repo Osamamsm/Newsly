@@ -1,0 +1,14 @@
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:newsly/features/settings/data/repos/settings_repo.dart';
+import 'package:newsly/features/settings/presentation/view_model/settings_cubit/settings_state.dart';
+
+class SettingsCubit extends Cubit<SettingsState> {
+  SettingsCubit(this._repo) : super(SettingsState.initial());
+
+  final SettingsRepo _repo;
+
+  void updateInterests(List<String> interests) async {
+    await _repo.setInterests(interests);
+    emit(state.copyWith(interests: interests));
+  }
+}
