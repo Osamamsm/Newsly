@@ -48,42 +48,52 @@ class Constants {
   static List<CategoryModel> categoriesListLocalized(BuildContext context) {
     return [
       CategoryModel(
+        key: 'education',
         name: S.of(context).education,
         iconData: FontAwesomeIcons.school,
       ),
       CategoryModel(
+        key: 'science',
         name: S.of(context).science,
         iconData: FontAwesomeIcons.flask,
       ),
       CategoryModel(
+        key: 'business',
         name: S.of(context).business,
         iconData: FontAwesomeIcons.briefcase,
       ),
       CategoryModel(
+        key: 'entertainment',
         name: S.of(context).entertainment,
         iconData: FontAwesomeIcons.film,
       ),
       CategoryModel(
+        key: 'health',
         name: S.of(context).health,
         iconData: FontAwesomeIcons.heartPulse,
       ),
       CategoryModel(
+        key: 'sports',
         name: S.of(context).sports,
         iconData: FontAwesomeIcons.football,
       ),
       CategoryModel(
+        key: 'technology',
         name: S.of(context).technology,
         iconData: FontAwesomeIcons.microchip,
       ),
       CategoryModel(
+        key: 'politics',
         name: S.of(context).politics,
         iconData: FontAwesomeIcons.landmark,
       ),
       CategoryModel(
+        key: 'food',
         name: S.of(context).food,
         iconData: FontAwesomeIcons.bowlFood,
       ),
       CategoryModel(
+        key: 'crime',
         name: S.of(context).crime,
         iconData: FontAwesomeIcons.handcuffs,
       ),
