@@ -5,8 +5,9 @@ import 'package:newsly/core/dependency_injection/di.dart';
 import 'package:newsly/core/routes/app_routes.dart';
 import 'package:newsly/generated/l10n.dart';
 
-void main() {
-  setupDependencies();
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await setupDependencies();
   runApp(const MyApp());
 }
 

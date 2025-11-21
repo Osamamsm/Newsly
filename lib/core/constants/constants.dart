@@ -48,10 +48,10 @@ class Constants {
     const SettingsBody(),
   ];
 
-  static List<Widget> onBoardingPages = [
-    const FirstPage(),
-    const SecondPage(),
-    const ThirdPage(),
+  static List<Widget> onBoardingPages = const [
+    FirstPage(),
+    SecondPage(),
+    ThirdPage(),
   ];
 
   static List<CategoryModel> categoriesListLocalized(BuildContext context) {

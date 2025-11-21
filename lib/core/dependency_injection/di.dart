@@ -6,7 +6,7 @@ import 'di.config.dart';
 final GetIt getIt = GetIt.instance;
 
 @InjectableInit()
-void setupDependencies() {
-  getIt.init();
+Future<void> setupDependencies() async{
+await  getIt.init();
   getIt.registerLazySingleton(() => AppDio.create());
 }

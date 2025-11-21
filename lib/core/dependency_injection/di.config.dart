@@ -12,8 +12,9 @@
 import 'package:dio/dio.dart' as _i361;
 import 'package:get_it/get_it.dart' as _i174;
 import 'package:injectable/injectable.dart' as _i526;
-import 'package:newsly/core/preferences/preferences_module.dart' as _i514;
 import 'package:newsly/core/networking/api_service.dart' as _i331;
+import 'package:newsly/core/preferences/preferences_module.dart' as _i835;
+import 'package:newsly/core/preferences/user_preferences_helper.dart' as _i655;
 import 'package:newsly/features/category_news/data/repos/category_news_repo.dart'
     as _i199;
 import 'package:newsly/features/category_news/data/repos/category_news_repo_impl.dart'
@@ -34,11 +35,21 @@ import 'package:newsly/features/news_details/data/repos/similar_news_repo_impl.d
     as _i306;
 import 'package:newsly/features/news_details/presentation/view_model/similar_news_cubit/similar_news_cubit.dart'
     as _i825;
+import 'package:newsly/features/on_boarding/data/repos/on_boarding_repo.dart'
+    as _i687;
+import 'package:newsly/features/on_boarding/data/repos/on_boarding_repo_impl.dart'
+    as _i1042;
+import 'package:newsly/features/on_boarding/presentation/view_model/cubit/on_boarding_cubit.dart'
+    as _i687;
 import 'package:newsly/features/search/data/repos/search_repo.dart' as _i513;
 import 'package:newsly/features/search/data/repos/search_repo_impl.dart'
     as _i986;
 import 'package:newsly/features/search/presentation/view_model/cubit/search_cubit.dart'
     as _i758;
+import 'package:newsly/features/settings/data/repos/settings_repo.dart'
+    as _i1037;
+import 'package:newsly/features/settings/data/repos/settings_repo_impl.dart'
+    as _i459;
 import 'package:shared_preferences/shared_preferences.dart' as _i460;
 
 extension GetItInjectableX on _i174.GetIt {
@@ -57,6 +68,18 @@ extension GetItInjectableX on _i174.GetIt {
     gh.lazySingleton<_i331.ApiService>(() => _i331.ApiService(gh<_i361.Dio>()));
     gh.lazySingleton<_i513.SearchRepo>(
       () => _i986.SearchRepoImpl(gh<_i331.ApiService>()),
+    );
+    gh.lazySingleton<_i687.OnBoardingRepo>(
+      () => _i1042.OnBoardingRepoImpl(gh<_i460.SharedPreferences>()),
+    );
+    gh.factory<_i687.OnBoardingCubit>(
+      () => _i687.OnBoardingCubit(
+        gh<_i687.OnBoardingRepo>(),
+        totalPages: gh<int>(),
+      ),
+    );
+    gh.lazySingleton<_i655.UserPreferencesHelper>(
+      () => _i655.UserPreferencesHelper(gh<_i460.SharedPreferences>()),
     );
     gh.lazySingleton<_i191.SimilarNewsRepo>(
       () => _i306.SimilarNewsRepoImpl(gh<_i331.ApiService>()),
@@ -79,6 +102,9 @@ extension GetItInjectableX on _i174.GetIt {
     gh.factory<_i758.SearchCubit>(
       () => _i758.SearchCubit(gh<_i513.SearchRepo>()),
     );
+    gh.lazySingleton<_i1037.SettingsRepo>(
+      () => _i459.SettingsRepoImpl(gh<_i655.UserPreferencesHelper>()),
+    );
     gh.factory<_i66.GetCategoryNewsCubit>(
       () => _i66.GetCategoryNewsCubit(gh<_i199.CategoryNewsRepo>()),
     );
@@ -86,4 +112,4 @@ extension GetItInjectableX on _i174.GetIt {
   }
 }
 
-class _$PreferencesModule extends _i514.PreferencesModule {}
+class _$PreferencesModule extends _i835.PreferencesModule {}
