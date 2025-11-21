@@ -6,6 +6,9 @@ import 'package:newsly/core/models/category_model.dart';
 import 'package:newsly/features/bookmarks/presentation/widgets/bookmarks_body.dart';
 import 'package:newsly/features/category_news/presentation/widgets/categories_body.dart';
 import 'package:newsly/features/feed/presentation/widgets/feed_body_bloc_provider.dart';
+import 'package:newsly/features/on_boarding/presentation/widgets/first_page.dart';
+import 'package:newsly/features/on_boarding/presentation/widgets/second_page.dart';
+import 'package:newsly/features/on_boarding/presentation/widgets/third_page.dart';
 import 'package:newsly/features/settings/presentation/widgets/settings_body.dart';
 import 'package:newsly/generated/l10n.dart';
 
@@ -43,6 +46,12 @@ class Constants {
     const BookmarksBody(),
     const CategoriesBody(),
     const SettingsBody(),
+  ];
+
+  static List<Widget> onBoardingPages = [
+    const FirstPage(),
+    const SecondPage(),
+    const ThirdPage(),
   ];
 
   static List<CategoryModel> categoriesListLocalized(BuildContext context) {
