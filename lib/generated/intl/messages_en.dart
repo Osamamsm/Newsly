@@ -34,6 +34,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "education": MessageLookupByLibrary.simpleMessage("Education"),
     "entertainment": MessageLookupByLibrary.simpleMessage("Entertainment"),
     "feed": MessageLookupByLibrary.simpleMessage("feed"),
+    "first_on_boarding_text": MessageLookupByLibrary.simpleMessage(
+      "Follow the topics you care about and hide \n what you don\'t , to create a news \n experience that is relevant to you.",
+    ),
     "food": MessageLookupByLibrary.simpleMessage("Food"),
     "for_you": MessageLookupByLibrary.simpleMessage("For You"),
     "general": MessageLookupByLibrary.simpleMessage("General"),
@@ -43,6 +46,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "manage_interests": MessageLookupByLibrary.simpleMessage(
       "Manage Interests",
     ),
+    "next": MessageLookupByLibrary.simpleMessage("Next"),
     "no_content_available": MessageLookupByLibrary.simpleMessage(
       "No Content Available",
     ),
@@ -56,12 +60,19 @@ class MessageLookup extends MessageLookupByLibrary {
     "science": MessageLookupByLibrary.simpleMessage("Science"),
     "search": MessageLookupByLibrary.simpleMessage("Search"),
     "search_results": MessageLookupByLibrary.simpleMessage("Search Results"),
+    "second_on_boarding_text": MessageLookupByLibrary.simpleMessage(
+      "Search for topics you love and \n customize your feed with categories \n that matter to you.",
+    ),
     "settings": MessageLookupByLibrary.simpleMessage("Settings"),
     "similar_articles": MessageLookupByLibrary.simpleMessage(
       "Similar Articles",
     ),
+    "skip": MessageLookupByLibrary.simpleMessage("Skip"),
     "sports": MessageLookupByLibrary.simpleMessage("Sports"),
     "technology": MessageLookupByLibrary.simpleMessage("Technology"),
+    "third_on_boarding_text": MessageLookupByLibrary.simpleMessage(
+      "Never lose an interesting article again. \n Bookmark stories with a single tap and \n read them anytime, even offline.",
+    ),
     "top_stories": MessageLookupByLibrary.simpleMessage("Top Stories"),
     "travel": MessageLookupByLibrary.simpleMessage("Travel"),
     "unavailable": MessageLookupByLibrary.simpleMessage("Unavailable"),

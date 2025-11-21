@@ -1,19 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:newsly/core/constants/app_colors.dart';
 import 'package:newsly/core/constants/app_text_styles.dart';
-import 'package:newsly/generated/l10n.dart';
 
 class CustomButton extends StatelessWidget {
-  const CustomButton({super.key, required this.onTap});
+  const CustomButton({super.key, required this.onTap, required this.width, required this.text});
 
   final VoidCallback onTap;
+  final double width;
+  final String text;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        width: double.infinity,
-        height: 60,
+        width: width,
+        height: 50,
         padding: EdgeInsets.all(15),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(12),
@@ -21,7 +22,7 @@ class CustomButton extends StatelessWidget {
         ),
         child: Center(
           child: Text(
-            S.of(context).save,
+            text,
             style: AppTextStyles.titleBoldWhite18,
           ),
         ),

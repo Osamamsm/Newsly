@@ -5,6 +5,7 @@ import 'package:newsly/core/constants/constants.dart';
 import 'package:newsly/core/helpers/spacing.dart';
 import 'package:newsly/features/settings/presentation/widgets/custom_button.dart';
 import 'package:newsly/features/settings/presentation/widgets/custom_category_check_box.dart';
+import 'package:newsly/generated/l10n.dart';
 
 class ManageInterestsViewBody extends StatefulWidget {
   const ManageInterestsViewBody({super.key});
@@ -53,6 +54,8 @@ class _ManageInterestsViewBodyState extends State<ManageInterestsViewBody> {
             padding: EdgeInsets.symmetric(vertical: 12),
             color: AppColors.kPrimaryLightColor,
             child: CustomButton(
+              text: S.of(context).save,
+              width: double.infinity,
               onTap: () {
                 context.pop();
               },

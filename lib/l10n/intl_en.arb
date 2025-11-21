@@ -33,5 +33,10 @@
     "recently":"Recently",
     "similar_articles":"Similar Articles",
     "no_similar_articles":"No Similar Articles",
-    "save":"Save"
+    "save":"Save",
+    "skip":"Skip",
+    "next":"Next",
+    "first_on_boarding_text":"Follow the topics you care about and hide \n what you don't , to create a news \n experience that is relevant to you.",
+    "second_on_boarding_text":"Search for topics you love and \n customize your feed with categories \n that matter to you.",
+    "third_on_boarding_text":"Never lose an interesting article again. \n Bookmark stories with a single tap and \n read them anytime, even offline."
 }

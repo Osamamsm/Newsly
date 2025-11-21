@@ -34,6 +34,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "education": MessageLookupByLibrary.simpleMessage("تعليم"),
     "entertainment": MessageLookupByLibrary.simpleMessage("ترفيه"),
     "feed": MessageLookupByLibrary.simpleMessage("الموجز"),
+    "first_on_boarding_text": MessageLookupByLibrary.simpleMessage(
+      "اتبع المواضيع التي تهمك وأخفِ ما لا يهمك لإنشاء تجربة إخبارية تناسبك.",
+    ),
     "food": MessageLookupByLibrary.simpleMessage("طعام"),
     "for_you": MessageLookupByLibrary.simpleMessage("من أجلك"),
     "general": MessageLookupByLibrary.simpleMessage("عام"),
@@ -41,6 +44,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "latest": MessageLookupByLibrary.simpleMessage("اخر الاخبار"),
     "light_mode": MessageLookupByLibrary.simpleMessage("الوضع الفاتح"),
     "manage_interests": MessageLookupByLibrary.simpleMessage("إدارة التفضيلات"),
+    "next": MessageLookupByLibrary.simpleMessage("التالي"),
     "no_content_available": MessageLookupByLibrary.simpleMessage(
       "لا يوجد محتوى",
     ),
@@ -54,12 +58,19 @@ class MessageLookup extends MessageLookupByLibrary {
     "science": MessageLookupByLibrary.simpleMessage("علوم"),
     "search": MessageLookupByLibrary.simpleMessage("بحث"),
     "search_results": MessageLookupByLibrary.simpleMessage("نتائج البحث"),
+    "second_on_boarding_text": MessageLookupByLibrary.simpleMessage(
+      "ابحث عن المواضيع التي تعجبك وقم بتخصيص موجز الأخبار الخاص بك بالفئات التي تهمك.",
+    ),
     "settings": MessageLookupByLibrary.simpleMessage("الإعدادات"),
     "similar_articles": MessageLookupByLibrary.simpleMessage(
       "المقالات المشابهة",
     ),
+    "skip": MessageLookupByLibrary.simpleMessage("تخطي"),
     "sports": MessageLookupByLibrary.simpleMessage("رياضة"),
     "technology": MessageLookupByLibrary.simpleMessage("تكنولوجيا"),
+    "third_on_boarding_text": MessageLookupByLibrary.simpleMessage(
+      "لا تفقد أي مقال شيق بعد الآن.أضف القصص إلى المفضلة بنقرة واحدة، واقرأها في أي وقت، حتى بدون اتصال بالإنترنت",
+    ),
     "top_stories": MessageLookupByLibrary.simpleMessage("أهم العناوين"),
     "travel": MessageLookupByLibrary.simpleMessage("سفر"),
     "unavailable": MessageLookupByLibrary.simpleMessage("غير متوفر"),
