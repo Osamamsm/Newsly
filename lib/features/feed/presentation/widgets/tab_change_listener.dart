@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:newsly/core/dependency_injection/di.dart';
+import 'package:newsly/core/preferences/user_preferences_helper.dart';
 import 'package:newsly/features/feed/presentation/view_model/for_you_news_cubit/for_you_news_cubit.dart';
 import 'package:newsly/features/feed/presentation/view_model/latest_news_cubit/latest_news_cubit.dart';
 
@@ -15,8 +17,12 @@ class TabChangeListener extends StatelessWidget {
         tabController.addListener(() {
           if (tabController.indexIsChanging) return;
 
+          final preferencesHelper = getIt<UserPreferencesHelper>();
+          final List<String> interests = preferencesHelper.getInterests();
           if (tabController.index == 0) {
-            context.read<ForYouNewsCubit>().getForYouNews(["science", "politics"]);
+            interests.isNotEmpty
+                ? {context.read<ForYouNewsCubit>().getForYouNews(interests)}
+                : {};
           } else if (tabController.index == 1) {
             context.read<LatestNewsCubit>().getLatestNews();
           }

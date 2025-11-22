@@ -29,10 +29,19 @@ class MessageLookup extends MessageLookupByLibrary {
     "bookmarks": MessageLookupByLibrary.simpleMessage("Bookmarks"),
     "business": MessageLookupByLibrary.simpleMessage("Business"),
     "categories": MessageLookupByLibrary.simpleMessage("Categories"),
+    "choose_your_interests": MessageLookupByLibrary.simpleMessage(
+      "Choose Your Interests",
+    ),
     "crime": MessageLookupByLibrary.simpleMessage("Crime"),
     "dark_mode": MessageLookupByLibrary.simpleMessage("Dark Mode"),
     "done": MessageLookupByLibrary.simpleMessage("Done"),
     "education": MessageLookupByLibrary.simpleMessage("Education"),
+    "empty_feed_desc_text": MessageLookupByLibrary.simpleMessage(
+      "Personalizing your feed with favorite topics \n will provide you with a curated news \n experience tailored just for you.",
+    ),
+    "empty_feed_title_text": MessageLookupByLibrary.simpleMessage(
+      "Customize Your News Feed",
+    ),
     "entertainment": MessageLookupByLibrary.simpleMessage("Entertainment"),
     "feed": MessageLookupByLibrary.simpleMessage("feed"),
     "first_on_boarding_desc_text": MessageLookupByLibrary.simpleMessage(

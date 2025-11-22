@@ -29,10 +29,19 @@ class MessageLookup extends MessageLookupByLibrary {
     "bookmarks": MessageLookupByLibrary.simpleMessage("علامات مرجعية"),
     "business": MessageLookupByLibrary.simpleMessage("أعمال"),
     "categories": MessageLookupByLibrary.simpleMessage("فئات"),
+    "choose_your_interests": MessageLookupByLibrary.simpleMessage(
+      "اختر اهتماماتك",
+    ),
     "crime": MessageLookupByLibrary.simpleMessage("جريمة"),
     "dark_mode": MessageLookupByLibrary.simpleMessage("الوضع الداكن"),
     "done": MessageLookupByLibrary.simpleMessage("تم"),
     "education": MessageLookupByLibrary.simpleMessage("تعليم"),
+    "empty_feed_desc_text": MessageLookupByLibrary.simpleMessage(
+      "تخصيص محتوى الأخبار حسب اهتماماتك\nيوفر لك تجربة إخبارية مخصصة تناسبك تمامًا.",
+    ),
+    "empty_feed_title_text": MessageLookupByLibrary.simpleMessage(
+      "خصص موجز الأخبار الخاص بك",
+    ),
     "entertainment": MessageLookupByLibrary.simpleMessage("ترفيه"),
     "feed": MessageLookupByLibrary.simpleMessage("الموجز"),
     "first_on_boarding_desc_text": MessageLookupByLibrary.simpleMessage(

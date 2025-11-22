@@ -12,13 +12,10 @@ class FeedBodyBlocProvider extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
-        BlocProvider(
-          create: (context) => getIt<ForYouNewsCubit>()..getForYouNews(['crime','sports']),
-        ),
+        BlocProvider(create: (context) => getIt<ForYouNewsCubit>()),
         BlocProvider(create: (context) => getIt<LatestNewsCubit>()),
       ],
-
-      child: FeedBody(),
+      child: const FeedBody(),
     );
   }
 }

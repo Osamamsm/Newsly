@@ -50,6 +50,8 @@ import 'package:newsly/features/settings/data/repos/settings_repo.dart'
     as _i1037;
 import 'package:newsly/features/settings/data/repos/settings_repo_impl.dart'
     as _i459;
+import 'package:newsly/features/settings/presentation/view_model/settings_cubit/settings_cubit.dart'
+    as _i328;
 import 'package:shared_preferences/shared_preferences.dart' as _i460;
 
 extension GetItInjectableX on _i174.GetIt {
@@ -105,6 +107,9 @@ extension GetItInjectableX on _i174.GetIt {
     );
     gh.factory<_i66.GetCategoryNewsCubit>(
       () => _i66.GetCategoryNewsCubit(gh<_i199.CategoryNewsRepo>()),
+    );
+    gh.factory<_i328.SettingsCubit>(
+      () => _i328.SettingsCubit(gh<_i1037.SettingsRepo>()),
     );
     return this;
   }

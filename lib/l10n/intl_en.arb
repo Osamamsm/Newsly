@@ -42,5 +42,8 @@
     "third_on_boarding_title_text":"Never Lose a Story",
     "first_on_boarding_desc_text":"Follow the topics you care about and hide what you don't ,\n to create a news experience that is relevant to you.",
     "second_on_boarding_desc_text":"Search for topics you love and \n customize your feed with categories \n that matter to you.",
-    "third_on_boarding_desc_text":"Never lose an interesting article again. \n Bookmark stories with a single tap and \n read them anytime, even offline."
+    "third_on_boarding_desc_text":"Never lose an interesting article again. \n Bookmark stories with a single tap and \n read them anytime, even offline.",
+    "empty_feed_title_text":"Customize Your News Feed",
+    "empty_feed_desc_text":"Personalizing your feed with favorite topics \n will provide you with a curated news \n experience tailored just for you.",
+    "choose_your_interests":"Choose Your Interests"
 }

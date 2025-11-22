@@ -5,32 +5,54 @@ import 'package:newsly/core/widgets/articles_list_view.dart';
 import 'package:newsly/core/widgets/articles_skeletonizer.dart';
 import 'package:newsly/features/feed/presentation/view_model/for_you_news_cubit/for_you_news_cubit.dart';
 import 'package:newsly/features/feed/presentation/view_model/for_you_news_cubit/for_you_news_state.dart';
+import 'package:newsly/features/feed/presentation/widgets/for_you_empty_body.dart';
+import 'package:newsly/features/settings/presentation/view_model/settings_cubit/settings_cubit.dart';
+import 'package:newsly/features/settings/presentation/view_model/settings_cubit/settings_state.dart';
 
 class ForYouTabBarView extends StatelessWidget {
-  const ForYouTabBarView({
-    super.key,
-  });
+  const ForYouTabBarView({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder<ForYouNewsCubit, ForYouNewsState>(
-      builder: (BuildContext context, ForYouNewsState state) {
-        if (state is ForYouNewsLoaded) {
-          return ArticlesListView(
-            onRefresh: ()=>context.read<ForYouNewsCubit>().getForYouNews(['Sports']),
-            articles: state.articles,
-            itemBuilder: (article) =>
-                ArticleTileWidget(article: article),
-          );
-        } else if (state is ForYouNewsLoading) {
-          return ArticlesSkeletonizer(
-            itemBuilder: (article) =>
-                ArticleTileWidget(article: article),
-          );
-        } else {
-          return Text("nothing yet");
+    return BlocListener<SettingsCubit, SettingsState>(
+      listenWhen: (previous, current) =>
+          previous.interests != current.interests,
+      listener: (context, state) {
+        if (state.interests.isNotEmpty) {
+          context.read<ForYouNewsCubit>().getForYouNews(state.interests);
         }
       },
+      child: Builder(
+        builder: (context) {
+          final settingsState = context.watch<SettingsCubit>().state;
+          final interests = settingsState.interests;
+          return BlocBuilder<ForYouNewsCubit, ForYouNewsState>(
+            builder: (BuildContext context, ForYouNewsState state) {
+              if (interests.isEmpty) {
+                return ForYouEmptyBody();
+              } else if (state is ForYouNewsInitial) {
+                context.read<ForYouNewsCubit>().getForYouNews(interests);
+                return ArticlesSkeletonizer(
+                  itemBuilder: (article) => ArticleTileWidget(article: article),
+                );
+              } else if (state is ForYouNewsLoaded) {
+                return ArticlesListView(
+                  onRefresh: () =>
+                      context.read<ForYouNewsCubit>().getForYouNews(interests),
+                  articles: state.articles,
+                  itemBuilder: (article) => ArticleTileWidget(article: article),
+                );
+              } else if (state is ForYouNewsLoading) {
+                return ArticlesSkeletonizer(
+                  itemBuilder: (article) => ArticleTileWidget(article: article),
+                );
+              } else {
+                return Text("nothing yet");
+              }
+            },
+          );
+        },
+      ),
     );
   }
 }

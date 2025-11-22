@@ -343,6 +343,36 @@ class S {
       args: [],
     );
   }
+
+  /// `Customize Your News Feed`
+  String get empty_feed_title_text {
+    return Intl.message(
+      'Customize Your News Feed',
+      name: 'empty_feed_title_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Personalizing your feed with favorite topics \n will provide you with a curated news \n experience tailored just for you.`
+  String get empty_feed_desc_text {
+    return Intl.message(
+      'Personalizing your feed with favorite topics \n will provide you with a curated news \n experience tailored just for you.',
+      name: 'empty_feed_desc_text',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Choose Your Interests`
+  String get choose_your_interests {
+    return Intl.message(
+      'Choose Your Interests',
+      name: 'choose_your_interests',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
