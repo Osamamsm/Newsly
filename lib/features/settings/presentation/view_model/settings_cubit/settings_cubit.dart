@@ -20,4 +20,13 @@ class SettingsCubit extends Cubit<SettingsState> {
   List<String> getInterests() {
     return _repo.getInterests();
   }
+
+  void setLocale(String language) async {
+    await _repo.setLocale(language);
+    emit(state.copyWith(locale: language));
+  }
+
+  String getLocale() {
+    return _repo.getLocale();
+  }
 }

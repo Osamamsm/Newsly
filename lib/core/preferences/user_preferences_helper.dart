@@ -11,7 +11,15 @@ class UserPreferencesHelper {
     await _preferences.setStringList('Interests', interests);
   }
 
-  List<String> getInterests()  {
-    return  _preferences.getStringList('Interests')??[];
+  List<String> getInterests() {
+    return _preferences.getStringList('Interests') ?? [];
+  }
+
+  Future<void> setLocale(String language) async {
+    await _preferences.setString('locale', language);
+  }
+
+  String getLocale() {
+    return _preferences.getString('locale') ?? "en";
   }
 }

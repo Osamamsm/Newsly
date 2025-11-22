@@ -17,4 +17,14 @@ class SettingsRepoImpl implements SettingsRepo {
   Future<void> setInterests(List<String> interests) async {
     await _preferencesHelper.setInterests(interests);
   }
+
+  @override
+  String getLocale() {
+    return _preferencesHelper.getLocale();
+  }
+
+  @override
+  Future<void> setLocale(String language) async {
+    await _preferencesHelper.setLocale(language);
+  }
 }
