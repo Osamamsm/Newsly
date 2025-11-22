@@ -54,6 +54,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "for_you": MessageLookupByLibrary.simpleMessage("من أجلك"),
     "general": MessageLookupByLibrary.simpleMessage("عام"),
     "health": MessageLookupByLibrary.simpleMessage("صحة"),
+    "language": MessageLookupByLibrary.simpleMessage("اللغة"),
     "latest": MessageLookupByLibrary.simpleMessage("اخر الاخبار"),
     "light_mode": MessageLookupByLibrary.simpleMessage("الوضع الفاتح"),
     "manage_interests": MessageLookupByLibrary.simpleMessage("إدارة التفضيلات"),
@@ -67,7 +68,6 @@ class MessageLookup extends MessageLookupByLibrary {
     "no_similar_articles": MessageLookupByLibrary.simpleMessage(
       "لا يوجد مقالات مشابهة",
     ),
-    "notifications": MessageLookupByLibrary.simpleMessage("إشعارات"),
     "politics": MessageLookupByLibrary.simpleMessage("سياسة"),
     "recently": MessageLookupByLibrary.simpleMessage("مؤخرا"),
     "save": MessageLookupByLibrary.simpleMessage("حفظ"),

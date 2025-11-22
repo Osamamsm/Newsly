@@ -42,7 +42,7 @@ class _ManageInterestsViewBodyState extends State<ManageInterestsViewBody> {
               separatorBuilder: (context, index) => vGap(10),
               itemBuilder: (context, index) {
                 final category = categories[index];
-                final isSelected = selectedCategories.contains(category.name);
+                final isSelected = selectedCategories.contains(category.key);
 
                 return CustomCategoryCheckBox(
                   label: categories[index].name,
@@ -50,9 +50,9 @@ class _ManageInterestsViewBodyState extends State<ManageInterestsViewBody> {
                   onChanged: (checked) {
                     setState(() {
                       if (checked) {
-                        selectedCategories.add(categories[index].name);
+                        selectedCategories.add(categories[index].key);
                       } else {
-                        selectedCategories.remove(categories[index].name);
+                        selectedCategories.remove(categories[index].key);
                       }
                     });
                   },

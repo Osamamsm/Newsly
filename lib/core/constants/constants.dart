@@ -54,6 +54,8 @@ class Constants {
     ThirdPage(),
   ];
 
+  static List<String> locales = ['ar', 'en'];
+
   static List<CategoryModel> categoriesListLocalized(BuildContext context) {
     return [
       CategoryModel(

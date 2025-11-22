@@ -54,6 +54,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "for_you": MessageLookupByLibrary.simpleMessage("For You"),
     "general": MessageLookupByLibrary.simpleMessage("General"),
     "health": MessageLookupByLibrary.simpleMessage("Health"),
+    "language": MessageLookupByLibrary.simpleMessage("Language"),
     "latest": MessageLookupByLibrary.simpleMessage("Latest"),
     "light_mode": MessageLookupByLibrary.simpleMessage("Light Mode"),
     "manage_interests": MessageLookupByLibrary.simpleMessage(
@@ -69,7 +70,6 @@ class MessageLookup extends MessageLookupByLibrary {
     "no_similar_articles": MessageLookupByLibrary.simpleMessage(
       "No Similar Articles",
     ),
-    "notifications": MessageLookupByLibrary.simpleMessage("Notifications"),
     "politics": MessageLookupByLibrary.simpleMessage("Politics"),
     "recently": MessageLookupByLibrary.simpleMessage("Recently"),
     "save": MessageLookupByLibrary.simpleMessage("Save"),

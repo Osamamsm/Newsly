@@ -169,14 +169,9 @@ class S {
     return Intl.message('Light Mode', name: 'light_mode', desc: '', args: []);
   }
 
-  /// `Notifications`
-  String get notifications {
-    return Intl.message(
-      'Notifications',
-      name: 'notifications',
-      desc: '',
-      args: [],
-    );
+  /// `Language`
+  String get language {
+    return Intl.message('Language', name: 'language', desc: '', args: []);
   }
 
   /// `Manage Interests`
