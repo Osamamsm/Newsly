@@ -12,6 +12,6 @@ class GetCategoryNewsLoaded extends GetCategoryNewsState {
 }
 
 class GetCategoryNewsError extends GetCategoryNewsState {
-  final String message;
-  GetCategoryNewsError(this.message);
+  final String errMessage;
+  GetCategoryNewsError(this.errMessage);
 }

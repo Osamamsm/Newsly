@@ -224,6 +224,16 @@ class S {
     );
   }
 
+  /// `No Search done yet`
+  String get no_search_done_yet {
+    return Intl.message(
+      'No Search done yet',
+      name: 'no_search_done_yet',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `No Content Available`
   String get no_content_available {
     return Intl.message(

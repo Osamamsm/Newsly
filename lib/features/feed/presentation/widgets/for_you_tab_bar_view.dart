@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:newsly/core/widgets/article_tile_widget.dart';
 import 'package:newsly/core/widgets/articles_list_view.dart';
 import 'package:newsly/core/widgets/articles_skeletonizer.dart';
+import 'package:newsly/core/widgets/custom_error_text.dart';
 import 'package:newsly/features/feed/presentation/view_model/for_you_news_cubit/for_you_news_cubit.dart';
 import 'package:newsly/features/feed/presentation/view_model/for_you_news_cubit/for_you_news_state.dart';
 import 'package:newsly/features/feed/presentation/widgets/for_you_empty_body.dart';
@@ -42,12 +43,12 @@ class ForYouTabBarView extends StatelessWidget {
                   articles: state.articles,
                   itemBuilder: (article) => ArticleTileWidget(article: article),
                 );
-              } else if (state is ForYouNewsLoading) {
+              } else if (state is ForYouNewsFailure) {
+                return  Center(child: CustomErrorText(errMessage:state.errMessage));
+              } else {
                 return ArticlesSkeletonizer(
                   itemBuilder: (article) => ArticleTileWidget(article: article),
                 );
-              } else {
-                return Text("nothing yet");
               }
             },
           );

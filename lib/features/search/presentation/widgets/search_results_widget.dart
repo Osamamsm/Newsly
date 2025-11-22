@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:newsly/core/constants/app_text_styles.dart';
 import 'package:newsly/core/widgets/article_tile_widget.dart';
 import 'package:newsly/core/widgets/articles_list_view.dart';
 import 'package:newsly/core/widgets/articles_skeletonizer.dart';
+import 'package:newsly/core/widgets/custom_error_text.dart';
 import 'package:newsly/features/search/presentation/view_model/cubit/search_cubit.dart';
 import 'package:newsly/features/search/presentation/view_model/cubit/search_state.dart';
+import 'package:newsly/generated/l10n.dart';
 
 class SearchResultsWidget extends StatelessWidget {
   const SearchResultsWidget({super.key});
@@ -22,7 +25,7 @@ class SearchResultsWidget extends StatelessWidget {
             ),
           );
         } else if (state is SearchFailed) {
-          return Text(state.errMessage);
+          return Center(child: CustomErrorText(errMessage: state.errMessage));
         } else if (state is SearchLoading) {
           return Expanded(
             child: ArticlesSkeletonizer(
@@ -30,7 +33,12 @@ class SearchResultsWidget extends StatelessWidget {
             ),
           );
         } else {
-          return Center(child: Text("No Search done yet"));
+          return Center(
+            child: Text(
+              S.of(context).no_search_done_yet,
+              style: AppTextStyles.bodyBoldBlack14,
+            ),
+          );
         }
       },
     );

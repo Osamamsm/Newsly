@@ -55,7 +55,7 @@ class ApiErrorHandler {
 
 ApiErrorModel _handleError(dynamic errorResponse) {
   return ApiErrorModel(
-    message: errorResponse["message"] ?? "An unknown error occurred",
+    message: errorResponse["results"]['message'] ?? "An unknown error occurred",
     code: errorResponse["code"],
     errors: errorResponse['errors'],
   );

@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:newsly/core/widgets/article_tile_widget.dart';
 import 'package:newsly/core/widgets/articles_list_view.dart';
 import 'package:newsly/core/widgets/articles_skeletonizer.dart';
+import 'package:newsly/core/widgets/custom_error_text.dart';
 import 'package:newsly/features/category_news/presentation/view_model/cubit/get_category_news_cubit.dart';
 import 'package:newsly/features/category_news/presentation/view_model/cubit/get_category_news_state.dart';
 
@@ -25,7 +26,7 @@ class CategorizedNewsViewBody extends StatelessWidget {
               itemBuilder: (article) => ArticleTileWidget(article: article),
             );
           } else if (state is GetCategoryNewsError) {
-            return Center(child: Text(state.message));
+            return Center(child: CustomErrorText(errMessage: state.errMessage));
           } else {
             return ArticlesSkeletonizer(
               itemBuilder: (article) => ArticleTileWidget(article: article),

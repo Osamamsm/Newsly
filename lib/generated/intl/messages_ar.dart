@@ -61,6 +61,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "no_content_available": MessageLookupByLibrary.simpleMessage(
       "لا يوجد محتوى",
     ),
+    "no_search_done_yet": MessageLookupByLibrary.simpleMessage(
+      "لم يتم البحث بعد",
+    ),
     "no_similar_articles": MessageLookupByLibrary.simpleMessage(
       "لا يوجد مقالات مشابهة",
     ),
