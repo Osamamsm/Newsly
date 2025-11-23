@@ -51,5 +51,6 @@
     "time_minutes_ago": "{count} minutes ago",
     "time_hours_ago": "{count} hours ago",
     "time_days_ago": "{count} days ago",
-    "time_just_now": "Just now"
+    "time_just_now": "Just now",
+    "category_limit_error": "Category limit exceeded — please select up to 5 categories only."
 }

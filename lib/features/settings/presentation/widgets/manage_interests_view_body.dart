@@ -67,8 +67,15 @@ class _ManageInterestsViewBodyState extends State<ManageInterestsViewBody> {
               text: S.of(context).save,
               width: double.infinity,
               onTap: () {
-                cubit.updateInterests(selectedCategories);
-                context.pop();
+                if (selectedCategories.length < 6) {
+                  cubit.updateInterests(selectedCategories);
+                  context.pop();
+                } else {
+                  final snackBar = SnackBar(
+                    content: Text(S.of(context).category_limit_error),
+                  );
+                  ScaffoldMessenger.of(context).showSnackBar(snackBar);
+                }
               },
             ),
           ),

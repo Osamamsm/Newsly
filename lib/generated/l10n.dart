@@ -423,6 +423,16 @@ class S {
   String get time_just_now {
     return Intl.message('Just now', name: 'time_just_now', desc: '', args: []);
   }
+
+  /// `Category limit exceeded — please select up to 5 categories only.`
+  String get category_limit_error {
+    return Intl.message(
+      'Category limit exceeded — please select up to 5 categories only.',
+      name: 'category_limit_error',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

@@ -37,6 +37,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "bookmarks": MessageLookupByLibrary.simpleMessage("Bookmarks"),
     "business": MessageLookupByLibrary.simpleMessage("Business"),
     "categories": MessageLookupByLibrary.simpleMessage("Categories"),
+    "category_limit_error": MessageLookupByLibrary.simpleMessage(
+      "Category limit exceeded — please select up to 5 categories only.",
+    ),
     "choose_your_interests": MessageLookupByLibrary.simpleMessage(
       "Choose Your Interests",
     ),

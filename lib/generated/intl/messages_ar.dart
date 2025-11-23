@@ -41,6 +41,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "bookmarks": MessageLookupByLibrary.simpleMessage("علامات مرجعية"),
     "business": MessageLookupByLibrary.simpleMessage("أعمال"),
     "categories": MessageLookupByLibrary.simpleMessage("فئات"),
+    "category_limit_error": MessageLookupByLibrary.simpleMessage(
+      "تم تجاوز الحد المسموح — الرجاء اختيار ما يصل إلى 5 تصنيفات فقط.",
+    ),
     "choose_your_interests": MessageLookupByLibrary.simpleMessage(
       "اختر اهتماماتك",
     ),
