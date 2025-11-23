@@ -378,6 +378,51 @@ class S {
       args: [],
     );
   }
+
+  /// `{count} seconds ago`
+  String time_seconds_ago(Object count) {
+    return Intl.message(
+      '$count seconds ago',
+      name: 'time_seconds_ago',
+      desc: '',
+      args: [count],
+    );
+  }
+
+  /// `{count} minutes ago`
+  String time_minutes_ago(Object count) {
+    return Intl.message(
+      '$count minutes ago',
+      name: 'time_minutes_ago',
+      desc: '',
+      args: [count],
+    );
+  }
+
+  /// `{count} hours ago`
+  String time_hours_ago(Object count) {
+    return Intl.message(
+      '$count hours ago',
+      name: 'time_hours_ago',
+      desc: '',
+      args: [count],
+    );
+  }
+
+  /// `{count} days ago`
+  String time_days_ago(Object count) {
+    return Intl.message(
+      '$count days ago',
+      name: 'time_days_ago',
+      desc: '',
+      args: [count],
+    );
+  }
+
+  /// `Just now`
+  String get time_just_now {
+    return Intl.message('Just now', name: 'time_just_now', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

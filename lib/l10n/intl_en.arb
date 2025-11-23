@@ -46,5 +46,10 @@
     "third_on_boarding_desc_text":"Never lose an interesting article again. \n Bookmark stories with a single tap and \n read them anytime, even offline.",
     "empty_feed_title_text":"Customize Your News Feed",
     "empty_feed_desc_text":"Personalizing your feed with favorite topics \n will provide you with a curated news \n experience tailored just for you.",
-    "choose_your_interests":"Choose Your Interests"
+    "choose_your_interests":"Choose Your Interests",
+    "time_seconds_ago": "{count} seconds ago",
+    "time_minutes_ago": "{count} minutes ago",
+    "time_hours_ago": "{count} hours ago",
+    "time_days_ago": "{count} days ago",
+    "time_just_now": "Just now"
 }

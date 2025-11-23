@@ -20,6 +20,14 @@ typedef String MessageIfAbsent(String messageStr, List<dynamic> args);
 class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'en';
 
+  static String m0(count) => "${count} days ago";
+
+  static String m1(count) => "${count} hours ago";
+
+  static String m2(count) => "${count} minutes ago";
+
+  static String m3(count) => "${count} seconds ago";
+
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
     "about": MessageLookupByLibrary.simpleMessage("About"),
@@ -95,6 +103,11 @@ class MessageLookup extends MessageLookupByLibrary {
     "third_on_boarding_title_text": MessageLookupByLibrary.simpleMessage(
       "Never Lose a Story",
     ),
+    "time_days_ago": m0,
+    "time_hours_ago": m1,
+    "time_just_now": MessageLookupByLibrary.simpleMessage("Just now"),
+    "time_minutes_ago": m2,
+    "time_seconds_ago": m3,
     "top_stories": MessageLookupByLibrary.simpleMessage("Top Stories"),
     "travel": MessageLookupByLibrary.simpleMessage("Travel"),
     "unavailable": MessageLookupByLibrary.simpleMessage("Unavailable"),

@@ -20,6 +20,18 @@ typedef String MessageIfAbsent(String messageStr, List<dynamic> args);
 class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'ar';
 
+  static String m0(count) =>
+      "${Intl.plural(count, zero: 'اليوم', one: 'منذ يوم', two: 'منذ يومين', few: 'منذ ${count} أيام', many: 'منذ ${count} يومًا', other: 'منذ ${count} يوم')}";
+
+  static String m1(count) =>
+      "${Intl.plural(count, zero: 'الآن', one: 'منذ ساعة', two: 'منذ ساعتين', few: 'منذ ${count} ساعات', many: 'منذ ${count} ساعة', other: 'منذ ${count} ساعة')}";
+
+  static String m2(count) =>
+      "${Intl.plural(count, zero: 'الآن', one: 'منذ دقيقة', two: 'منذ دقيقتين', few: 'منذ ${count} دقائق', many: 'منذ ${count} دقيقة', other: 'منذ ${count} دقيقة')}";
+
+  static String m3(count) =>
+      "${Intl.plural(count, zero: 'الآن', one: 'منذ ثانية', two: 'منذ ثانيتين', few: 'منذ ${count} ثوانٍ', many: 'منذ ${count} ثانية', other: 'منذ ${count} ثانية')}";
+
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
     "about": MessageLookupByLibrary.simpleMessage("حول"),
@@ -93,6 +105,11 @@ class MessageLookup extends MessageLookupByLibrary {
     "third_on_boarding_title_text": MessageLookupByLibrary.simpleMessage(
       "لا تفقد قصة أبدًا",
     ),
+    "time_days_ago": m0,
+    "time_hours_ago": m1,
+    "time_just_now": MessageLookupByLibrary.simpleMessage("الآن"),
+    "time_minutes_ago": m2,
+    "time_seconds_ago": m3,
     "top_stories": MessageLookupByLibrary.simpleMessage("أهم العناوين"),
     "travel": MessageLookupByLibrary.simpleMessage("سفر"),
     "unavailable": MessageLookupByLibrary.simpleMessage("غير متوفر"),
