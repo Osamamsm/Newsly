@@ -13,7 +13,7 @@ class FeedBodyBlocProvider extends StatelessWidget {
     return MultiBlocProvider(
       providers: [
         BlocProvider(create: (context) => getIt<ForYouNewsCubit>()),
-        BlocProvider(create: (context) => getIt<LatestNewsCubit>()),
+        BlocProvider(create: (context) => getIt<LatestNewsCubit>()..getLatestNews()),
       ],
       child: const FeedBody(),
     );

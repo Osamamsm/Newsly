@@ -3,7 +3,6 @@ import 'package:newsly/core/helpers/spacing.dart';
 import 'package:newsly/features/feed/presentation/widgets/custom_tab_bar.dart';
 import 'package:newsly/features/feed/presentation/widgets/for_you_tab_bar_view.dart';
 import 'package:newsly/features/feed/presentation/widgets/latest_tab_bar_view.dart';
-import 'package:newsly/features/feed/presentation/widgets/tab_change_listener.dart';
 
 class FeedBody extends StatelessWidget {
   const FeedBody({super.key});
@@ -18,7 +17,6 @@ class FeedBody extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             CustomTabBar(),
-            TabChangeListener(),
             vGap(10),
             Expanded(
               child: TabBarView(
