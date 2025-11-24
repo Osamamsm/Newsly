@@ -14,6 +14,7 @@ import 'package:get_it/get_it.dart' as _i174;
 import 'package:injectable/injectable.dart' as _i526;
 import 'package:newsly/core/database/app_data_base.dart' as _i975;
 import 'package:newsly/core/networking/api_service.dart' as _i331;
+import 'package:newsly/core/networking/connectivity_service.dart' as _i954;
 import 'package:newsly/core/preferences/preferences_module.dart' as _i835;
 import 'package:newsly/core/preferences/user_preferences_helper.dart' as _i655;
 import 'package:newsly/features/bookmarks/data/repos/book_marks_repo.dart'
@@ -71,6 +72,9 @@ extension GetItInjectableX on _i174.GetIt {
     final preferencesModule = _$PreferencesModule();
     gh.factory<_i1.NavBarCubit>(() => _i1.NavBarCubit());
     gh.lazySingleton<_i975.AppDataBase>(() => _i975.AppDataBase());
+    gh.lazySingleton<_i954.ConnectivityService>(
+      () => _i954.ConnectivityService(),
+    );
     await gh.lazySingletonAsync<_i460.SharedPreferences>(
       () => preferencesModule.preferences,
       preResolve: true,
@@ -107,11 +111,18 @@ extension GetItInjectableX on _i174.GetIt {
     gh.lazySingleton<_i199.CategoryNewsRepo>(
       () => _i1051.CategoryNewsRepoImpl(gh<_i331.ApiService>()),
     );
-    gh.factory<_i851.ForYouNewsCubit>(
-      () => _i851.ForYouNewsCubit(gh<_i200.FeedRepo>()),
-    );
     gh.factory<_i566.LatestNewsCubit>(
-      () => _i566.LatestNewsCubit(gh<_i200.FeedRepo>()),
+      () => _i566.LatestNewsCubit(
+        gh<_i200.FeedRepo>(),
+        gh<_i954.ConnectivityService>(),
+      ),
+    );
+    gh.factoryParam<_i851.ForYouNewsCubit, List<String>, dynamic>(
+      (categories, _) => _i851.ForYouNewsCubit(
+        gh<_i200.FeedRepo>(),
+        gh<_i954.ConnectivityService>(),
+        categories,
+      ),
     );
     gh.factory<_i758.SearchCubit>(
       () => _i758.SearchCubit(gh<_i513.SearchRepo>()),

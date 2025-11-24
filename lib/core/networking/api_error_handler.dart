@@ -66,8 +66,8 @@ String _getLocalizedErrorMessage(DioExceptionType dioExceptionType) {
   switch (dioExceptionType) {
     case DioExceptionType.connectionError:
       return isArabic
-          ? "خطأ في الاتصال بالخادم"
-          : "Connection error with the server";
+          ? "لا يوجد اتصال بالإنترنت"
+          : "No Internet Connection";
     case DioExceptionType.connectionTimeout:
       return isArabic
           ? "انتهت مهلة الاتصال بالخادم"
