@@ -20,6 +20,8 @@ import 'package:newsly/features/bookmarks/data/repos/book_marks_repo.dart'
     as _i509;
 import 'package:newsly/features/bookmarks/data/repos/book_marks_repo_impl.dart'
     as _i190;
+import 'package:newsly/features/bookmarks/presentation/view_model/cubit/book_marks_cubit.dart'
+    as _i160;
 import 'package:newsly/features/category_news/data/repos/category_news_repo.dart'
     as _i199;
 import 'package:newsly/features/category_news/data/repos/category_news_repo_impl.dart'
@@ -77,6 +79,9 @@ extension GetItInjectableX on _i174.GetIt {
       () => _i190.BookMarksRepoImpl(gh<_i975.AppDataBase>()),
     );
     gh.lazySingleton<_i331.ApiService>(() => _i331.ApiService(gh<_i361.Dio>()));
+    gh.factory<_i160.BookMarksCubit>(
+      () => _i160.BookMarksCubit(gh<_i509.BookMarksRepo>()),
+    );
     gh.lazySingleton<_i513.SearchRepo>(
       () => _i986.SearchRepoImpl(gh<_i331.ApiService>()),
     );

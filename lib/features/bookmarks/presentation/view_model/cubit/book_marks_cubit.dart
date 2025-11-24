@@ -1,8 +1,10 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:injectable/injectable.dart';
 import 'package:newsly/core/models/news_model/article.dart';
 import 'package:newsly/features/bookmarks/data/repos/book_marks_repo.dart';
 import 'package:newsly/features/bookmarks/presentation/view_model/cubit/book_marks_state.dart';
 
+@Injectable()
 class BookMarksCubit extends Cubit<BookMarksState> {
   BookMarksCubit(this._repo) : super(BookMarksInitial());
 
