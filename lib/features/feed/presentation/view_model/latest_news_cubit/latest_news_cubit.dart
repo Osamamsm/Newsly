@@ -26,4 +26,10 @@ class LatestNewsCubit extends Cubit<LatestNewsState> {
       (news) => emit(LatestNewsLoaded(news)),
     );
   }
+
+   @override
+  Future<void> close() {
+    subscription.cancel();
+    return super.close();
+  }
 }
