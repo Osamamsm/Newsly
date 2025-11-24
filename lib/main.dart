@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
         child: BlocBuilder<SettingsCubit, SettingsState>(
           builder: (context, state) {
             return MaterialApp.router(
-              locale: Locale(context.read<SettingsCubit>().getLocale()),
+              locale: Locale(state.locale),
               theme: ThemeData(useMaterial3: false),
               localizationsDelegates: [
                 S.delegate,
