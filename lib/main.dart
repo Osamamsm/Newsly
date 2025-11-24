@@ -4,6 +4,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:newsly/core/dependency_injection/di.dart';
 import 'package:newsly/core/routes/app_routes.dart';
+import 'package:newsly/features/bookmarks/presentation/view_model/cubit/book_marks_cubit.dart';
 import 'package:newsly/features/settings/presentation/view_model/settings_cubit/settings_cubit.dart';
 import 'package:newsly/features/settings/presentation/view_model/settings_cubit/settings_state.dart';
 import 'package:newsly/generated/l10n.dart';
@@ -20,8 +21,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      child: BlocProvider(
-        create: (context) => getIt<SettingsCubit>(),
+      child: MultiBlocProvider(
+        providers: [
+          BlocProvider(create: (context) => getIt<SettingsCubit>()),
+          BlocProvider(create: (context) => getIt<BookMarksCubit>()),
+        ],
         child: BlocBuilder<SettingsCubit, SettingsState>(
           builder: (context, state) {
             return MaterialApp.router(

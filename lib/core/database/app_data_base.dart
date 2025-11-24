@@ -52,7 +52,7 @@ class AppDataBase {
   Future<int> deleteBookMark(String id) async {
     final db = await database;
 
-    return db.delete('bookmarks', where: 'id = ?', whereArgs: [id]);
+    return db.delete('bookmarks', where: 'article_id = ?', whereArgs: [id]);
   }
 
   Future<List<Map<String, dynamic>>> getBookMarks() async {

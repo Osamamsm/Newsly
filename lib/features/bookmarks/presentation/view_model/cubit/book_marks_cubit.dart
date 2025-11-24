@@ -6,7 +6,9 @@ import 'package:newsly/features/bookmarks/presentation/view_model/cubit/book_mar
 
 @Injectable()
 class BookMarksCubit extends Cubit<BookMarksState> {
-  BookMarksCubit(this._repo) : super(BookMarksInitial());
+  BookMarksCubit(this._repo) : super(BookMarksInitial()) {
+    loadBookMarks();
+  }
 
   final BookMarksRepo _repo;
 
@@ -27,7 +29,6 @@ class BookMarksCubit extends Cubit<BookMarksState> {
       _repo.addBookMark(article);
     }
 
-    final updatedBookMarksList = await _repo.getBookMarks();
-    emit(BookMarksLoaded(updatedBookMarksList));
+    loadBookMarks();
   }
 }
