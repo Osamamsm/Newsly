@@ -433,6 +433,26 @@ class S {
       args: [],
     );
   }
+
+  /// `We couldn't load this content. Please check your connection or try again in a moment.`
+  String get error_body_subtitle {
+    return Intl.message(
+      'We couldn\'t load this content. Please check your connection or try again in a moment.',
+      name: 'error_body_subtitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Try Again`
+  String get try_again {
+    return Intl.message('Try Again', name: 'try_again', desc: '', args: []);
+  }
+
+  /// `Go To Home`
+  String get go_to_home {
+    return Intl.message('Go To Home', name: 'go_to_home', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

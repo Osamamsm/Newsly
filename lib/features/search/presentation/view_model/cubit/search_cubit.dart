@@ -12,7 +12,10 @@ class SearchCubit extends Cubit<SearchState> {
 
   Timer? _searchDebounceTimer;
 
+  String lastQuery = '';
+
   void onQueryChanged(String query) {
+    lastQuery = query;
     _searchDebounceTimer?.cancel();
 
     _searchDebounceTimer = Timer(Duration(milliseconds: 500), () {

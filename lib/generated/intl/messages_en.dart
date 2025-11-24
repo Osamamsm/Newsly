@@ -54,6 +54,9 @@ class MessageLookup extends MessageLookupByLibrary {
       "Customize Your News Feed",
     ),
     "entertainment": MessageLookupByLibrary.simpleMessage("Entertainment"),
+    "error_body_subtitle": MessageLookupByLibrary.simpleMessage(
+      "We couldn\'t load this content. Please check your connection or try again in a moment.",
+    ),
     "feed": MessageLookupByLibrary.simpleMessage("feed"),
     "first_on_boarding_desc_text": MessageLookupByLibrary.simpleMessage(
       "Follow the topics you care about and hide what you don\'t ,\n to create a news experience that is relevant to you.",
@@ -64,6 +67,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "food": MessageLookupByLibrary.simpleMessage("Food"),
     "for_you": MessageLookupByLibrary.simpleMessage("For You"),
     "general": MessageLookupByLibrary.simpleMessage("General"),
+    "go_to_home": MessageLookupByLibrary.simpleMessage("Go To Home"),
     "health": MessageLookupByLibrary.simpleMessage("Health"),
     "language": MessageLookupByLibrary.simpleMessage("Language"),
     "latest": MessageLookupByLibrary.simpleMessage("Latest"),
@@ -113,6 +117,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "time_seconds_ago": m3,
     "top_stories": MessageLookupByLibrary.simpleMessage("Top Stories"),
     "travel": MessageLookupByLibrary.simpleMessage("Travel"),
+    "try_again": MessageLookupByLibrary.simpleMessage("Try Again"),
     "unavailable": MessageLookupByLibrary.simpleMessage("Unavailable"),
   };
 }

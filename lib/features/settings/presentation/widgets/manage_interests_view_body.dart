@@ -5,7 +5,7 @@ import 'package:newsly/core/constants/app_colors.dart';
 import 'package:newsly/core/constants/constants.dart';
 import 'package:newsly/core/helpers/spacing.dart';
 import 'package:newsly/features/settings/presentation/view_model/settings_cubit/settings_cubit.dart';
-import 'package:newsly/features/settings/presentation/widgets/custom_button.dart';
+import 'package:newsly/core/widgets/custom_button.dart';
 import 'package:newsly/features/settings/presentation/widgets/custom_category_check_box.dart';
 import 'package:newsly/generated/l10n.dart';
 

@@ -6,7 +6,7 @@ import 'package:newsly/core/constants/constants.dart';
 import 'package:newsly/features/home/presentation/views/home_view.dart';
 import 'package:newsly/features/on_boarding/presentation/view_model/cubit/on_boarding_cubit.dart';
 import 'package:newsly/features/on_boarding/presentation/view_model/cubit/on_boarding_state.dart';
-import 'package:newsly/features/settings/presentation/widgets/custom_button.dart';
+import 'package:newsly/core/widgets/custom_button.dart';
 import 'package:newsly/generated/l10n.dart';
 
 class OnBoardingView extends StatelessWidget {

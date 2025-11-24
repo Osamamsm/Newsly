@@ -4,7 +4,7 @@ import 'package:newsly/core/constants/app_text_styles.dart';
 import 'package:newsly/core/constants/assets.dart';
 import 'package:newsly/core/helpers/spacing.dart';
 import 'package:newsly/features/settings/presentation/views/manage_interests_view.dart';
-import 'package:newsly/features/settings/presentation/widgets/custom_button.dart';
+import 'package:newsly/core/widgets/custom_button.dart';
 import 'package:newsly/generated/l10n.dart';
 
 class ForYouEmptyBody extends StatelessWidget {

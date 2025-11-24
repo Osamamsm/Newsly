@@ -58,6 +58,9 @@ class MessageLookup extends MessageLookupByLibrary {
       "خصص موجز الأخبار الخاص بك",
     ),
     "entertainment": MessageLookupByLibrary.simpleMessage("ترفيه"),
+    "error_body_subtitle": MessageLookupByLibrary.simpleMessage(
+      "لم نتمكن من تحميل هذا المحتوى. يُرجى التحقق من اتصالك أو المحاولة مرة أخرى بعد قليل.",
+    ),
     "feed": MessageLookupByLibrary.simpleMessage("الموجز"),
     "first_on_boarding_desc_text": MessageLookupByLibrary.simpleMessage(
       "اتبع المواضيع التي تهمك وأخفِ ما لا يهمك لإنشاء تجربة إخبارية تناسبك.",
@@ -68,6 +71,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "food": MessageLookupByLibrary.simpleMessage("طعام"),
     "for_you": MessageLookupByLibrary.simpleMessage("من أجلك"),
     "general": MessageLookupByLibrary.simpleMessage("عام"),
+    "go_to_home": MessageLookupByLibrary.simpleMessage(
+      "اذهب الى الصفحة الرئيسية",
+    ),
     "health": MessageLookupByLibrary.simpleMessage("صحة"),
     "language": MessageLookupByLibrary.simpleMessage("اللغة"),
     "latest": MessageLookupByLibrary.simpleMessage("اخر الاخبار"),
@@ -115,6 +121,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "time_seconds_ago": m3,
     "top_stories": MessageLookupByLibrary.simpleMessage("أهم العناوين"),
     "travel": MessageLookupByLibrary.simpleMessage("سفر"),
+    "try_again": MessageLookupByLibrary.simpleMessage("حاول مرة أخرى"),
     "unavailable": MessageLookupByLibrary.simpleMessage("غير متوفر"),
   };
 }

@@ -14,7 +14,7 @@ class CustomTabBar extends StatelessWidget {
       child: TabBar(
         labelPadding: EdgeInsets.zero,
         unselectedLabelColor: AppColors.grey,
-        labelStyle: AppTextStyles.bodyBoldBlack14,
+        labelStyle: AppTextStyles.bodyBoldPrimary16,
         indicatorWeight: 3,
         indicatorColor: AppColors.kPrimaryColor,
         tabs: [

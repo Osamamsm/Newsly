@@ -52,5 +52,8 @@
     "time_hours_ago": "{count} hours ago",
     "time_days_ago": "{count} days ago",
     "time_just_now": "Just now",
-    "category_limit_error": "Category limit exceeded — please select up to 5 categories only."
+    "category_limit_error": "Category limit exceeded — please select up to 5 categories only.",
+    "error_body_subtitle":"We couldn't load this content. Please check your connection or try again in a moment.",
+    "try_again":"Try Again",
+    "go_to_home":"Go To Home"
 }

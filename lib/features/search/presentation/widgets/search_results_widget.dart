@@ -4,7 +4,7 @@ import 'package:newsly/core/constants/app_text_styles.dart';
 import 'package:newsly/core/widgets/article_tile_widget.dart';
 import 'package:newsly/core/widgets/articles_list_view.dart';
 import 'package:newsly/core/widgets/articles_skeletonizer.dart';
-import 'package:newsly/core/widgets/custom_error_text.dart';
+import 'package:newsly/core/widgets/error_body.dart';
 import 'package:newsly/features/search/presentation/view_model/cubit/search_cubit.dart';
 import 'package:newsly/features/search/presentation/view_model/cubit/search_state.dart';
 import 'package:newsly/generated/l10n.dart';
@@ -25,7 +25,13 @@ class SearchResultsWidget extends StatelessWidget {
             ),
           );
         } else if (state is SearchFailed) {
-          return Center(child: CustomErrorText(errMessage: state.errMessage));
+          return ErrorBody(
+            errMessage: state.errMessage,
+            onRetry: () {
+              final cubit = context.read<SearchCubit>();
+              cubit.onQueryChanged(cubit.lastQuery);
+            },
+          );
         } else if (state is SearchLoading) {
           return Expanded(
             child: ArticlesSkeletonizer(
