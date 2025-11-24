@@ -33,7 +33,8 @@ class AppDataBase {
     content TEXT,
     link TEXT,
     source_name TEXT,
-    pub_date TEXT
+    pub_date TEXT,
+    key_words TEXT
 )
   ''');
   }

@@ -12,10 +12,14 @@
 import 'package:dio/dio.dart' as _i361;
 import 'package:get_it/get_it.dart' as _i174;
 import 'package:injectable/injectable.dart' as _i526;
-import 'package:newsly/core/database/app_data_base.dart' as _i876;
+import 'package:newsly/core/database/app_data_base.dart' as _i975;
 import 'package:newsly/core/networking/api_service.dart' as _i331;
 import 'package:newsly/core/preferences/preferences_module.dart' as _i835;
 import 'package:newsly/core/preferences/user_preferences_helper.dart' as _i655;
+import 'package:newsly/features/bookmarks/data/repos/book_marks_repo.dart'
+    as _i509;
+import 'package:newsly/features/bookmarks/data/repos/book_marks_repo_impl.dart'
+    as _i190;
 import 'package:newsly/features/category_news/data/repos/category_news_repo.dart'
     as _i199;
 import 'package:newsly/features/category_news/data/repos/category_news_repo_impl.dart'
@@ -64,10 +68,13 @@ extension GetItInjectableX on _i174.GetIt {
     final gh = _i526.GetItHelper(this, environment, environmentFilter);
     final preferencesModule = _$PreferencesModule();
     gh.factory<_i1.NavBarCubit>(() => _i1.NavBarCubit());
-    gh.lazySingleton<_i876.AppDataBase>(() => _i876.AppDataBase());
+    gh.lazySingleton<_i975.AppDataBase>(() => _i975.AppDataBase());
     await gh.lazySingletonAsync<_i460.SharedPreferences>(
       () => preferencesModule.preferences,
       preResolve: true,
+    );
+    gh.lazySingleton<_i509.BookMarksRepo>(
+      () => _i190.BookMarksRepoImpl(gh<_i975.AppDataBase>()),
     );
     gh.lazySingleton<_i331.ApiService>(() => _i331.ApiService(gh<_i361.Dio>()));
     gh.lazySingleton<_i513.SearchRepo>(

@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:json_annotation/json_annotation.dart';
 
 part 'article.g.dart';
@@ -78,5 +80,34 @@ class Article {
     return _$ArticleFromJson(json);
   }
 
-  Map<String, dynamic> toJson() => _$ArticleToJson(this);
+
+  factory Article.fromBookmarkJson(Map<String, dynamic> json) {
+    return Article(
+      articleId: json['article_id'],
+      title: json['title'],
+      description: json['description'],
+      imageUrl: json['image_url'],
+      content: json['content'],
+      link: json['link'],
+      sourceName: json['source_name'],
+      pubDate: json['pub_date'],
+      keywords: (jsonDecode(json['key_words'] ?? []) as List<dynamic>)
+          .map((e) => e.toString())
+          .toList(),
+    );
+  }
+
+  Map<String, dynamic> toBookmarkJson() {
+    return {
+      'article_id': articleId,
+      'title': title,
+      'description': description,
+      'image_url': imageUrl,
+      'content': content,
+      'link': link,
+      'source_name': sourceName,
+      'pub_date': pubDate,
+      'key_words': jsonEncode(keywords ?? []),
+    };
+  }
 }
