@@ -2,6 +2,10 @@
 class Assets {
   Assets._();
   
+  /// Assets for assetsImagesEmptyBookMarksImage
+  /// assets/images/empty_book_marks_image.png
+  static const String assetsImagesEmptyBookMarksImage = "assets/images/empty_book_marks_image.png";
+
   /// Assets for assetsImagesEmptyFeedImage
   /// assets/images/empty_feed_image.png
   static const String assetsImagesEmptyFeedImage = "assets/images/empty_feed_image.png";

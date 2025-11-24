@@ -8,6 +8,6 @@ class AppColors {
   static const Color grey = Colors.grey;
   static Color darkGrey = Colors.grey[700]!;
   static const Color white = Colors.white;
-  static const Color kPrimaryLightColor = Color.fromARGB(255, 231, 222, 255);
-  static const Color kPrimaryColor = Color.fromARGB(255, 58, 44, 132);
+  static const Color kPrimaryLightColor = Color.fromARGB(255, 197, 236, 255);
+  static const Color kPrimaryColor = Color(0xFF1668c5);
 }

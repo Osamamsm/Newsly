@@ -453,6 +453,26 @@ class S {
   String get go_to_home {
     return Intl.message('Go To Home', name: 'go_to_home', desc: '', args: []);
   }
+
+  /// `Your Reading List is Empty`
+  String get empty_book_marks_title {
+    return Intl.message(
+      'Your Reading List is Empty',
+      name: 'empty_book_marks_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Tap the bookmark icon on any article to save it for later.`
+  String get empty_book_marks_subtitle {
+    return Intl.message(
+      'Tap the bookmark icon on any article to save it for later.',
+      name: 'empty_book_marks_subtitle',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

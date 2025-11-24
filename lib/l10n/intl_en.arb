@@ -55,5 +55,7 @@
     "category_limit_error": "Category limit exceeded — please select up to 5 categories only.",
     "error_body_subtitle":"We couldn't load this content. Please check your connection or try again in a moment.",
     "try_again":"Try Again",
-    "go_to_home":"Go To Home"
+    "go_to_home":"Go To Home",
+    "empty_book_marks_title":"Your Reading List is Empty",
+    "empty_book_marks_subtitle":"Tap the bookmark icon on any article to save it for later."
 }

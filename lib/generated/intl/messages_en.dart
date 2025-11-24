@@ -47,6 +47,12 @@ class MessageLookup extends MessageLookupByLibrary {
     "dark_mode": MessageLookupByLibrary.simpleMessage("Dark Mode"),
     "done": MessageLookupByLibrary.simpleMessage("Done"),
     "education": MessageLookupByLibrary.simpleMessage("Education"),
+    "empty_book_marks_subtitle": MessageLookupByLibrary.simpleMessage(
+      "Tap the bookmark icon on any article to save it for later.",
+    ),
+    "empty_book_marks_title": MessageLookupByLibrary.simpleMessage(
+      "Your Reading List is Empty",
+    ),
     "empty_feed_desc_text": MessageLookupByLibrary.simpleMessage(
       "Personalizing your feed with favorite topics \n will provide you with a curated news \n experience tailored just for you.",
     ),

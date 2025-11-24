@@ -51,6 +51,12 @@ class MessageLookup extends MessageLookupByLibrary {
     "dark_mode": MessageLookupByLibrary.simpleMessage("الوضع الداكن"),
     "done": MessageLookupByLibrary.simpleMessage("تم"),
     "education": MessageLookupByLibrary.simpleMessage("تعليم"),
+    "empty_book_marks_subtitle": MessageLookupByLibrary.simpleMessage(
+      "اضغط على أيقونة الإشارة المرجعية على أي مقال لحفظه لقراءته في وقت لاحق.",
+    ),
+    "empty_book_marks_title": MessageLookupByLibrary.simpleMessage(
+      "قائمة القراءة الخاصة بك فارغة",
+    ),
     "empty_feed_desc_text": MessageLookupByLibrary.simpleMessage(
       "تخصيص محتوى الأخبار حسب اهتماماتك\nيوفر لك تجربة إخبارية مخصصة تناسبك تمامًا.",
     ),
