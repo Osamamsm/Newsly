@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
           builder: (context, state) {
             return MaterialApp.router(
               locale: Locale(state.locale),
-              theme: ThemeData(useMaterial3: false),
+              theme: ThemeData(useMaterial3: false,fontFamily: 'DMSerifText'),
               localizationsDelegates: [
                 S.delegate,
                 GlobalMaterialLocalizations.delegate,

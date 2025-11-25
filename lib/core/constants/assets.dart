@@ -14,6 +14,10 @@ class Assets {
   /// assets/images/empty_search_image.png
   static const String assetsImagesEmptySearchImage = "assets/images/empty_search_image.png";
 
+  /// Assets for assetsImagesNewslyLogo
+  /// assets/images/Newsly_logo.png
+  static const String assetsImagesNewslyLogo = "assets/images/Newsly_logo.png";
+
   /// Assets for assetsOnBoardingFirstPageDarkImage
   /// assets/on_boarding/first_page_dark_image.png
   static const String assetsOnBoardingFirstPageDarkImage = "assets/on_boarding/first_page_dark_image.png";
