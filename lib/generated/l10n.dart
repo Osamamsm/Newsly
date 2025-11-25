@@ -473,6 +473,26 @@ class S {
       args: [],
     );
   }
+
+  /// `Start Your Search`
+  String get empty_search_title {
+    return Intl.message(
+      'Start Your Search',
+      name: 'empty_search_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Discover news, topics, and sources from around the world.`
+  String get empty_search_subtitle {
+    return Intl.message(
+      'Discover news, topics, and sources from around the world.',
+      name: 'empty_search_subtitle',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

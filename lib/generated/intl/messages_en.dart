@@ -59,6 +59,12 @@ class MessageLookup extends MessageLookupByLibrary {
     "empty_feed_title_text": MessageLookupByLibrary.simpleMessage(
       "Customize Your News Feed",
     ),
+    "empty_search_subtitle": MessageLookupByLibrary.simpleMessage(
+      "Discover news, topics, and sources from around the world.",
+    ),
+    "empty_search_title": MessageLookupByLibrary.simpleMessage(
+      "Start Your Search",
+    ),
     "entertainment": MessageLookupByLibrary.simpleMessage("Entertainment"),
     "error_body_subtitle": MessageLookupByLibrary.simpleMessage(
       "We couldn\'t load this content. Please check your connection or try again in a moment.",

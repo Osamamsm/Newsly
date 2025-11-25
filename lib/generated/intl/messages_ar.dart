@@ -63,6 +63,10 @@ class MessageLookup extends MessageLookupByLibrary {
     "empty_feed_title_text": MessageLookupByLibrary.simpleMessage(
       "خصص موجز الأخبار الخاص بك",
     ),
+    "empty_search_subtitle": MessageLookupByLibrary.simpleMessage(
+      "اكتشف الأخبار والموضوعات والمصادر من جميع أنحاء العالم.",
+    ),
+    "empty_search_title": MessageLookupByLibrary.simpleMessage("ابدأ البحث"),
     "entertainment": MessageLookupByLibrary.simpleMessage("ترفيه"),
     "error_body_subtitle": MessageLookupByLibrary.simpleMessage(
       "لم نتمكن من تحميل هذا المحتوى. يُرجى التحقق من اتصالك أو المحاولة مرة أخرى بعد قليل.",
