@@ -8,9 +8,15 @@ import 'package:newsly/features/home/presentation/views/home_view.dart';
 import 'package:newsly/generated/l10n.dart';
 
 class ErrorBody extends StatelessWidget {
-  const ErrorBody({super.key, this.onRetry, required this.errMessage});
+  const ErrorBody({
+    super.key,
+    required this.onRetry,
+    required this.errMessage,
+    required this.goHomeEnabled,
+  });
 
-  final VoidCallback? onRetry;
+  final VoidCallback onRetry;
+  final bool goHomeEnabled;
   final String errMessage;
   @override
   Widget build(BuildContext context) {
@@ -45,26 +51,22 @@ class ErrorBody extends StatelessWidget {
             textAlign: TextAlign.center,
           ),
           vGap(20),
-          onRetry != null
-              ? Column(
-                  children: [
-                    CustomButton(
-                      onTap: onRetry!,
-                      width: double.infinity,
-                      text: S.of(context).try_again,
-                    ),
-                    vGap(20),
 
-                    GestureDetector(
-                      onTap: () {
-                        context.replace(HomeView.routeName);
-                      },
-                      child: Text(
-                        S.of(context).go_to_home,
-                        style: AppTextStyles.bodyBoldPrimary16,
-                      ),
-                    ),
-                  ],
+          CustomButton(
+            onTap: onRetry,
+            width: double.infinity,
+            text: S.of(context).try_again,
+          ),
+          vGap(20),
+          goHomeEnabled
+              ? GestureDetector(
+                  onTap: () {
+                    context.replace(HomeView.routeName);
+                  },
+                  child: Text(
+                    S.of(context).go_to_home,
+                    style: AppTextStyles.bodyBoldPrimary16,
+                  ),
                 )
               : SizedBox(),
         ],

@@ -31,6 +31,7 @@ class CategorizedNewsViewBody extends StatelessWidget {
               onRetry: () => context
                   .read<GetCategoryNewsCubit>()
                   .getCategoryNews(category),
+              goHomeEnabled: true,
             );
           } else {
             return ArticlesSkeletonizer(

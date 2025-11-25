@@ -21,7 +21,13 @@ class LatestTabBarView extends StatelessWidget {
             itemBuilder: (article) => ArticleTileWidget(article: article),
           );
         } else if (state is LatestNewsFailure) {
-          return ErrorBody(errMessage: state.errMessage);
+          return ErrorBody(
+            errMessage: state.errMessage,
+            onRetry: () {
+              context.read<LatestNewsCubit>().getLatestNews();
+            },
+            goHomeEnabled: false,
+          );
         } else {
           return ArticlesSkeletonizer(
             itemBuilder: (article) => ArticleTileWidget(article: article),

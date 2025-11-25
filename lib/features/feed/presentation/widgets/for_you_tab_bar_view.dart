@@ -44,7 +44,13 @@ class ForYouTabBarView extends StatelessWidget {
                   itemBuilder: (article) => ArticleTileWidget(article: article),
                 );
               } else if (state is ForYouNewsFailure) {
-                return ErrorBody(errMessage: state.errMessage);
+                return ErrorBody(
+                  errMessage: state.errMessage,
+                  onRetry: () {
+                    context.read<ForYouNewsCubit>().getForYouNews(interests);
+                  },
+                  goHomeEnabled: false,
+                );
               } else {
                 return ArticlesSkeletonizer(
                   itemBuilder: (article) => ArticleTileWidget(article: article),

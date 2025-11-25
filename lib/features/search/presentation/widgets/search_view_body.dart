@@ -26,6 +26,7 @@ class SearchViewBody extends StatelessWidget {
               final cubit = context.read<SearchCubit>();
               cubit.onQueryChanged(cubit.lastQuery);
             },
+            goHomeEnabled: true,
           );
         } else if (state is SearchLoading) {
           return Expanded(
