@@ -16,29 +16,27 @@ class SearchViewBody extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 12),
       child: BlocBuilder<SearchCubit, SearchState>(
-      builder: (context, state) {
-        if (state is SearchSucceeded) {
-          return SearchResultsBody(articles: state.articles,);
-        } else if (state is SearchFailed) {
-          return ErrorBody(
-            errMessage: state.errMessage,
-            onRetry: () {
-              final cubit = context.read<SearchCubit>();
-              cubit.onQueryChanged(cubit.lastQuery);
-            },
-            goHomeEnabled: true,
-          );
-        } else if (state is SearchLoading) {
-          return Expanded(
-            child: ArticlesSkeletonizer(
+        builder: (context, state) {
+          if (state is SearchSucceeded) {
+            return SearchResultsBody(articles: state.articles);
+          } else if (state is SearchFailed) {
+            return ErrorBody(
+              errMessage: state.errMessage,
+              onRetry: () {
+                final cubit = context.read<SearchCubit>();
+                cubit.onQueryChanged(cubit.lastQuery);
+              },
+              goHomeEnabled: true,
+            );
+          } else if (state is SearchLoading) {
+            return ArticlesSkeletonizer(
               itemBuilder: (article) => ArticleTileWidget(article: article),
-            ),
-          );
-        } else {
-          return EmptySearchBody();
-        }
-      },
-    ),
+            );
+          } else {
+            return EmptySearchBody();
+          }
+        },
+      ),
     );
   }
 }
