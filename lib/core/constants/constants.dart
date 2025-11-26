@@ -41,6 +41,24 @@ class Constants {
     ];
   }
 
+  static final socialButtons = [
+    {
+      'icon': FontAwesomeIcons.linkedin,
+      'color': Color(0xFF0A66C2),
+      'url': 'https://www.linkedin.com/in/osama-selim-flutter-developer/',
+    },
+    {
+      'icon': FontAwesomeIcons.github,
+      'color': AppColors.black,
+      'url': 'https://github.com/Osamamsm',
+    },
+    {
+      'icon': FontAwesomeIcons.whatsapp,
+      'color': Colors.green,
+      'url': 'https://wa.me/201010787657',
+    },
+  ];
+
   static List<Widget> homeBodies = [
     const FeedBodyBlocProvider(),
     const BookmarksBody(),

@@ -35,6 +35,11 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
     "about": MessageLookupByLibrary.simpleMessage("حول"),
+    "aboutDeveloper": MessageLookupByLibrary.simpleMessage("حول المطوّر"),
+    "aboutMe": MessageLookupByLibrary.simpleMessage("نبذة عني"),
+    "aboutMeDescription": MessageLookupByLibrary.simpleMessage(
+      "مطور شغوف بإنشاء تطبيقات جميلة وسهلة الاستخدام وموجهة للمستخدم.",
+    ),
     "about_app": MessageLookupByLibrary.simpleMessage("حول التطبيق"),
     "about_developer": MessageLookupByLibrary.simpleMessage("حول المطور"),
     "appearance": MessageLookupByLibrary.simpleMessage("المظهر"),
@@ -51,6 +56,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "dark_mode": MessageLookupByLibrary.simpleMessage("الوضع الداكن"),
     "done": MessageLookupByLibrary.simpleMessage("تم"),
     "education": MessageLookupByLibrary.simpleMessage("تعليم"),
+    "email": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
     "empty_book_marks_subtitle": MessageLookupByLibrary.simpleMessage(
       "اضغط على أيقونة الإشارة المرجعية على أي مقال لحفظه لقراءته في وقت لاحق.",
     ),
@@ -81,6 +87,8 @@ class MessageLookup extends MessageLookupByLibrary {
     "food": MessageLookupByLibrary.simpleMessage("طعام"),
     "for_you": MessageLookupByLibrary.simpleMessage("من أجلك"),
     "general": MessageLookupByLibrary.simpleMessage("عام"),
+    "getInTouch": MessageLookupByLibrary.simpleMessage("تواصل معي"),
+    "github": MessageLookupByLibrary.simpleMessage("جيت هاب"),
     "go_to_home": MessageLookupByLibrary.simpleMessage(
       "اذهب الى الصفحة الرئيسية",
     ),
@@ -88,7 +96,11 @@ class MessageLookup extends MessageLookupByLibrary {
     "language": MessageLookupByLibrary.simpleMessage("اللغة"),
     "latest": MessageLookupByLibrary.simpleMessage("اخر الاخبار"),
     "light_mode": MessageLookupByLibrary.simpleMessage("الوضع الفاتح"),
+    "linkedIn": MessageLookupByLibrary.simpleMessage("لينكدإن"),
     "manage_interests": MessageLookupByLibrary.simpleMessage("إدارة التفضيلات"),
+    "mobileAppDeveloper": MessageLookupByLibrary.simpleMessage(
+      "مطوّر تطبيقات موبايل",
+    ),
     "next": MessageLookupByLibrary.simpleMessage("التالي"),
     "no_content_available": MessageLookupByLibrary.simpleMessage(
       "لا يوجد محتوى",

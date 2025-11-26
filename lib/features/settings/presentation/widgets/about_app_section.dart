@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:newsly/core/constants/app_text_styles.dart';
 import 'package:newsly/core/helpers/spacing.dart';
+import 'package:newsly/features/info/views/about_developer_view.dart';
 import 'package:newsly/features/settings/presentation/widgets/setting_tile_widget.dart';
 import 'package:newsly/generated/l10n.dart';
 
@@ -23,7 +25,9 @@ class AboutAppSection extends StatelessWidget {
         SettingTileWidget(
           icon: Icons.logo_dev_outlined,
           title: S.of(context).about_developer,
-          onPressed: () {},
+          onPressed: () {
+            context.push(AboutDeveloperView.routeName);
+          },
         ),
       ],
     );

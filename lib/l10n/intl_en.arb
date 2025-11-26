@@ -59,5 +59,13 @@
     "empty_book_marks_title":"Your Reading List is Empty",
     "empty_book_marks_subtitle":"Tap the bookmark icon on any article to save it for later.",
     "empty_search_title":"Start Your Search",
-    "empty_search_subtitle":"Discover news, topics, and sources from around the world."
+    "empty_search_subtitle":"Discover news, topics, and sources from around the world.",
+    "aboutDeveloper": "About the Developer",
+    "mobileAppDeveloper": "Mobile App Developer",
+    "aboutMe": "About Me",
+    "aboutMeDescription": "A passionate developer dedicated to creating beautiful, functional, and user-centric mobile applications.",
+    "getInTouch": "Get in Touch",
+    "email": "Email",
+    "linkedIn": "LinkedIn",
+    "github": "GitHub"
 }

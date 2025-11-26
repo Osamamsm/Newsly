@@ -31,6 +31,13 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
     "about": MessageLookupByLibrary.simpleMessage("About"),
+    "aboutDeveloper": MessageLookupByLibrary.simpleMessage(
+      "About the Developer",
+    ),
+    "aboutMe": MessageLookupByLibrary.simpleMessage("About Me"),
+    "aboutMeDescription": MessageLookupByLibrary.simpleMessage(
+      "A passionate developer dedicated to creating beautiful, functional, and user-centric mobile applications.",
+    ),
     "about_app": MessageLookupByLibrary.simpleMessage("About App"),
     "about_developer": MessageLookupByLibrary.simpleMessage("About Developer"),
     "appearance": MessageLookupByLibrary.simpleMessage("Appearance"),
@@ -47,6 +54,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "dark_mode": MessageLookupByLibrary.simpleMessage("Dark Mode"),
     "done": MessageLookupByLibrary.simpleMessage("Done"),
     "education": MessageLookupByLibrary.simpleMessage("Education"),
+    "email": MessageLookupByLibrary.simpleMessage("Email"),
     "empty_book_marks_subtitle": MessageLookupByLibrary.simpleMessage(
       "Tap the bookmark icon on any article to save it for later.",
     ),
@@ -79,13 +87,19 @@ class MessageLookup extends MessageLookupByLibrary {
     "food": MessageLookupByLibrary.simpleMessage("Food"),
     "for_you": MessageLookupByLibrary.simpleMessage("For You"),
     "general": MessageLookupByLibrary.simpleMessage("General"),
+    "getInTouch": MessageLookupByLibrary.simpleMessage("Get in Touch"),
+    "github": MessageLookupByLibrary.simpleMessage("GitHub"),
     "go_to_home": MessageLookupByLibrary.simpleMessage("Go To Home"),
     "health": MessageLookupByLibrary.simpleMessage("Health"),
     "language": MessageLookupByLibrary.simpleMessage("Language"),
     "latest": MessageLookupByLibrary.simpleMessage("Latest"),
     "light_mode": MessageLookupByLibrary.simpleMessage("Light Mode"),
+    "linkedIn": MessageLookupByLibrary.simpleMessage("LinkedIn"),
     "manage_interests": MessageLookupByLibrary.simpleMessage(
       "Manage Interests",
+    ),
+    "mobileAppDeveloper": MessageLookupByLibrary.simpleMessage(
+      "Mobile App Developer",
     ),
     "next": MessageLookupByLibrary.simpleMessage("Next"),
     "no_content_available": MessageLookupByLibrary.simpleMessage(

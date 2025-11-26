@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:newsly/generated/l10n.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Functions {
   static String timeAgo(BuildContext context, String dateTimeString) {
@@ -25,4 +26,19 @@ class Functions {
 
     return "${dateTime.year}-${dateTime.month}-${dateTime.day}";
   }
+
+
+
+  static Future<void> launch(String url) async {
+    final uri = Uri.parse(url);
+
+    if (await canLaunchUrl(uri)) {
+      await launchUrl(uri, mode: LaunchMode.externalApplication);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
 }
+
+
+

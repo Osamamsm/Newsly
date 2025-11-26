@@ -11,6 +11,7 @@ import 'package:newsly/features/on_boarding/presentation/on_boarding_view.dart';
 import 'package:newsly/features/on_boarding/presentation/view_model/cubit/on_boarding_cubit.dart';
 import 'package:newsly/features/search/presentation/view_model/cubit/search_cubit.dart';
 import 'package:newsly/features/search/presentation/views/search_view.dart';
+import 'package:newsly/features/info/views/about_developer_view.dart';
 import 'package:newsly/features/settings/presentation/views/manage_interests_view.dart';
 
 final router = GoRouter(
@@ -61,6 +62,10 @@ final router = GoRouter(
     GoRoute(
       path: ManageInterestsView.routeName,
       builder: (context, state) => const ManageInterestsView(),
+    ),
+    GoRoute(
+      path: AboutDeveloperView.routeName,
+      builder: (context, state) => const AboutDeveloperView(),
     ),
   ],
 );

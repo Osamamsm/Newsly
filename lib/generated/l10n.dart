@@ -493,6 +493,61 @@ class S {
       args: [],
     );
   }
+
+  /// `About the Developer`
+  String get aboutDeveloper {
+    return Intl.message(
+      'About the Developer',
+      name: 'aboutDeveloper',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Mobile App Developer`
+  String get mobileAppDeveloper {
+    return Intl.message(
+      'Mobile App Developer',
+      name: 'mobileAppDeveloper',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `About Me`
+  String get aboutMe {
+    return Intl.message('About Me', name: 'aboutMe', desc: '', args: []);
+  }
+
+  /// `A passionate developer dedicated to creating beautiful, functional, and user-centric mobile applications.`
+  String get aboutMeDescription {
+    return Intl.message(
+      'A passionate developer dedicated to creating beautiful, functional, and user-centric mobile applications.',
+      name: 'aboutMeDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Get in Touch`
+  String get getInTouch {
+    return Intl.message('Get in Touch', name: 'getInTouch', desc: '', args: []);
+  }
+
+  /// `Email`
+  String get email {
+    return Intl.message('Email', name: 'email', desc: '', args: []);
+  }
+
+  /// `LinkedIn`
+  String get linkedIn {
+    return Intl.message('LinkedIn', name: 'linkedIn', desc: '', args: []);
+  }
+
+  /// `GitHub`
+  String get github {
+    return Intl.message('GitHub', name: 'github', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
