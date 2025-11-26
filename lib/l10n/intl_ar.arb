@@ -67,5 +67,14 @@
     "getInTouch": "تواصل معي",
     "email": "البريد الإلكتروني",
     "linkedIn": "لينكدإن",
-    "github": "جيت هاب"
+    "github": "جيت هاب",
+    "dev_name":"أسامة محمد سليم",
+    "appDescription": "Newsly هو مصدرك الأول للأخبار الموثوقة والمحدّثة.",
+  "keyFeatures": "الميزات الرئيسية",
+  "personalizedFeed": "موجز مخصص",
+  "personalizedFeedDescription": "أخبار موجهة لما تهتم به.",
+  "offlineReading": "القراءة بدون إنترنت",
+  "offlineReadingDescription": "احفظ المقالات واقرأها في أي وقت.",
+  "powerfulSearch": "بحث قوي",
+  "powerfulSearchDescription": "اعثر على أي مقال أو موضوع فورًا."
 }

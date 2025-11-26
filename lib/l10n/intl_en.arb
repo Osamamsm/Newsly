@@ -67,5 +67,14 @@
     "getInTouch": "Get in Touch",
     "email": "Email",
     "linkedIn": "LinkedIn",
-    "github": "GitHub"
+    "github": "GitHub",
+    "dev_name":"Osama Mohamed Selim",
+    "appDescription": "Newsly is your go-to source for unbiased, up-to-the-minute news.",
+  "keyFeatures": "Key Features",
+  "personalizedFeed": "Personalized Feed",
+  "personalizedFeedDescription": "Tailored news that matters to you.",
+  "offlineReading": "Offline Reading",
+  "offlineReadingDescription": "Save articles and read them anytime.",
+  "powerfulSearch": "Powerful Search",
+  "powerfulSearchDescription": "Find any article or topic instantly."
 }

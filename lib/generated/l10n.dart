@@ -548,6 +548,96 @@ class S {
   String get github {
     return Intl.message('GitHub', name: 'github', desc: '', args: []);
   }
+
+  /// `Osama Mohamed Selim`
+  String get dev_name {
+    return Intl.message(
+      'Osama Mohamed Selim',
+      name: 'dev_name',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Newsly is your go-to source for unbiased, up-to-the-minute news.`
+  String get appDescription {
+    return Intl.message(
+      'Newsly is your go-to source for unbiased, up-to-the-minute news.',
+      name: 'appDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Key Features`
+  String get keyFeatures {
+    return Intl.message(
+      'Key Features',
+      name: 'keyFeatures',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Personalized Feed`
+  String get personalizedFeed {
+    return Intl.message(
+      'Personalized Feed',
+      name: 'personalizedFeed',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Tailored news that matters to you.`
+  String get personalizedFeedDescription {
+    return Intl.message(
+      'Tailored news that matters to you.',
+      name: 'personalizedFeedDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Offline Reading`
+  String get offlineReading {
+    return Intl.message(
+      'Offline Reading',
+      name: 'offlineReading',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Save articles and read them anytime.`
+  String get offlineReadingDescription {
+    return Intl.message(
+      'Save articles and read them anytime.',
+      name: 'offlineReadingDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Powerful Search`
+  String get powerfulSearch {
+    return Intl.message(
+      'Powerful Search',
+      name: 'powerfulSearch',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Find any article or topic instantly.`
+  String get powerfulSearchDescription {
+    return Intl.message(
+      'Find any article or topic instantly.',
+      name: 'powerfulSearchDescription',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

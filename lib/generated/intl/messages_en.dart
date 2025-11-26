@@ -40,6 +40,9 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "about_app": MessageLookupByLibrary.simpleMessage("About App"),
     "about_developer": MessageLookupByLibrary.simpleMessage("About Developer"),
+    "appDescription": MessageLookupByLibrary.simpleMessage(
+      "Newsly is your go-to source for unbiased, up-to-the-minute news.",
+    ),
     "appearance": MessageLookupByLibrary.simpleMessage("Appearance"),
     "bookmarks": MessageLookupByLibrary.simpleMessage("Bookmarks"),
     "business": MessageLookupByLibrary.simpleMessage("Business"),
@@ -52,6 +55,7 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "crime": MessageLookupByLibrary.simpleMessage("Crime"),
     "dark_mode": MessageLookupByLibrary.simpleMessage("Dark Mode"),
+    "dev_name": MessageLookupByLibrary.simpleMessage("Osama Mohamed Selim"),
     "done": MessageLookupByLibrary.simpleMessage("Done"),
     "education": MessageLookupByLibrary.simpleMessage("Education"),
     "email": MessageLookupByLibrary.simpleMessage("Email"),
@@ -91,6 +95,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "github": MessageLookupByLibrary.simpleMessage("GitHub"),
     "go_to_home": MessageLookupByLibrary.simpleMessage("Go To Home"),
     "health": MessageLookupByLibrary.simpleMessage("Health"),
+    "keyFeatures": MessageLookupByLibrary.simpleMessage("Key Features"),
     "language": MessageLookupByLibrary.simpleMessage("Language"),
     "latest": MessageLookupByLibrary.simpleMessage("Latest"),
     "light_mode": MessageLookupByLibrary.simpleMessage("Light Mode"),
@@ -111,7 +116,21 @@ class MessageLookup extends MessageLookupByLibrary {
     "no_similar_articles": MessageLookupByLibrary.simpleMessage(
       "No Similar Articles",
     ),
+    "offlineReading": MessageLookupByLibrary.simpleMessage("Offline Reading"),
+    "offlineReadingDescription": MessageLookupByLibrary.simpleMessage(
+      "Save articles and read them anytime.",
+    ),
+    "personalizedFeed": MessageLookupByLibrary.simpleMessage(
+      "Personalized Feed",
+    ),
+    "personalizedFeedDescription": MessageLookupByLibrary.simpleMessage(
+      "Tailored news that matters to you.",
+    ),
     "politics": MessageLookupByLibrary.simpleMessage("Politics"),
+    "powerfulSearch": MessageLookupByLibrary.simpleMessage("Powerful Search"),
+    "powerfulSearchDescription": MessageLookupByLibrary.simpleMessage(
+      "Find any article or topic instantly.",
+    ),
     "recently": MessageLookupByLibrary.simpleMessage("Recently"),
     "save": MessageLookupByLibrary.simpleMessage("Save"),
     "science": MessageLookupByLibrary.simpleMessage("Science"),

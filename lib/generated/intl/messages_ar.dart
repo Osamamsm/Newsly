@@ -42,6 +42,9 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "about_app": MessageLookupByLibrary.simpleMessage("حول التطبيق"),
     "about_developer": MessageLookupByLibrary.simpleMessage("حول المطور"),
+    "appDescription": MessageLookupByLibrary.simpleMessage(
+      "Newsly هو مصدرك الأول للأخبار الموثوقة والمحدّثة.",
+    ),
     "appearance": MessageLookupByLibrary.simpleMessage("المظهر"),
     "bookmarks": MessageLookupByLibrary.simpleMessage("علامات مرجعية"),
     "business": MessageLookupByLibrary.simpleMessage("أعمال"),
@@ -54,6 +57,7 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "crime": MessageLookupByLibrary.simpleMessage("جريمة"),
     "dark_mode": MessageLookupByLibrary.simpleMessage("الوضع الداكن"),
+    "dev_name": MessageLookupByLibrary.simpleMessage("أسامة محمد سليم"),
     "done": MessageLookupByLibrary.simpleMessage("تم"),
     "education": MessageLookupByLibrary.simpleMessage("تعليم"),
     "email": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
@@ -93,6 +97,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "اذهب الى الصفحة الرئيسية",
     ),
     "health": MessageLookupByLibrary.simpleMessage("صحة"),
+    "keyFeatures": MessageLookupByLibrary.simpleMessage("الميزات الرئيسية"),
     "language": MessageLookupByLibrary.simpleMessage("اللغة"),
     "latest": MessageLookupByLibrary.simpleMessage("اخر الاخبار"),
     "light_mode": MessageLookupByLibrary.simpleMessage("الوضع الفاتح"),
@@ -111,7 +116,21 @@ class MessageLookup extends MessageLookupByLibrary {
     "no_similar_articles": MessageLookupByLibrary.simpleMessage(
       "لا يوجد مقالات مشابهة",
     ),
+    "offlineReading": MessageLookupByLibrary.simpleMessage(
+      "القراءة بدون إنترنت",
+    ),
+    "offlineReadingDescription": MessageLookupByLibrary.simpleMessage(
+      "احفظ المقالات واقرأها في أي وقت.",
+    ),
+    "personalizedFeed": MessageLookupByLibrary.simpleMessage("موجز مخصص"),
+    "personalizedFeedDescription": MessageLookupByLibrary.simpleMessage(
+      "أخبار موجهة لما تهتم به.",
+    ),
     "politics": MessageLookupByLibrary.simpleMessage("سياسة"),
+    "powerfulSearch": MessageLookupByLibrary.simpleMessage("بحث قوي"),
+    "powerfulSearchDescription": MessageLookupByLibrary.simpleMessage(
+      "اعثر على أي مقال أو موضوع فورًا.",
+    ),
     "recently": MessageLookupByLibrary.simpleMessage("مؤخرا"),
     "save": MessageLookupByLibrary.simpleMessage("حفظ"),
     "science": MessageLookupByLibrary.simpleMessage("علوم"),

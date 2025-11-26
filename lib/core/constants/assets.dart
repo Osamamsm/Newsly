@@ -2,6 +2,18 @@
 class Assets {
   Assets._();
   
+  /// Assets for assetsFontsDMSerifTextItalic
+  /// assets/fonts/DMSerifText-Italic.ttf
+  static const String assetsFontsDMSerifTextItalic = "assets/fonts/DMSerifText-Italic.ttf";
+
+  /// Assets for assetsFontsDMSerifTextRegular
+  /// assets/fonts/DMSerifText-Regular.ttf
+  static const String assetsFontsDMSerifTextRegular = "assets/fonts/DMSerifText-Regular.ttf";
+
+  /// Assets for assetsImagesDevImage
+  /// assets/images/dev_image.jpg
+  static const String assetsImagesDevImage = "assets/images/dev_image.jpg";
+
   /// Assets for assetsImagesEmptyBookMarksImage
   /// assets/images/empty_book_marks_image.png
   static const String assetsImagesEmptyBookMarksImage = "assets/images/empty_book_marks_image.png";

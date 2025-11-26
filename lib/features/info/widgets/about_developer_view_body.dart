@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:newsly/core/constants/app_text_styles.dart';
+import 'package:newsly/core/constants/assets.dart';
 import 'package:newsly/core/helpers/spacing.dart';
 import 'package:newsly/features/info/widgets/info_card.dart';
 import 'package:newsly/features/info/widgets/social_buttons_row.dart';
@@ -18,10 +19,10 @@ class AboutDeveloperViewBody extends StatelessWidget {
         children: [
           const CircleAvatar(
             radius: 60,
-            backgroundImage: AssetImage("assets/images/dev.png"),
+            backgroundImage: AssetImage(Assets.assetsImagesDevImage),
           ),
           vGap(10),
-          Text("Alex Doe", style: AppTextStyles.titleBoldBlack22),
+          Text(s.dev_name, style: AppTextStyles.titleBoldBlack22),
           Text(s.mobileAppDeveloper, style: AppTextStyles.bodyMediumDarkGrey18),
           vGap(10),
           InfoCard(

@@ -5,6 +5,7 @@ import 'package:newsly/core/dependency_injection/di.dart';
 import 'package:newsly/features/category_news/presentation/views/categorized_news_view.dart';
 import 'package:newsly/features/home/presentation/view_model/nav_bar_cubit/nav_bar_cubit.dart';
 import 'package:newsly/features/home/presentation/views/home_view.dart';
+import 'package:newsly/features/info/views/about_app_view.dart';
 import 'package:newsly/features/news_details/presentation/views/news_details_view.dart';
 import 'package:newsly/features/on_boarding/data/repos/on_boarding_repo.dart';
 import 'package:newsly/features/on_boarding/presentation/on_boarding_view.dart';
@@ -66,6 +67,10 @@ final router = GoRouter(
     GoRoute(
       path: AboutDeveloperView.routeName,
       builder: (context, state) => const AboutDeveloperView(),
+    ),
+    GoRoute(
+      path: AboutAppView.routeName,
+      builder: (context, state) => const AboutAppView(),
     ),
   ],
 );
