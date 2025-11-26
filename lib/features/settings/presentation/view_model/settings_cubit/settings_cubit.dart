@@ -7,7 +7,8 @@ import 'package:newsly/features/settings/presentation/view_model/settings_cubit/
 class SettingsCubit extends Cubit<SettingsState> {
   SettingsCubit(this._repo) : super(SettingsState.initial()) {
     final interests = _repo.getInterests();
-    emit(state.copyWith(interests: interests));
+    final locale = _repo.getLocale();
+    emit(state.copyWith(interests: interests,locale: locale));
   }
 
   final SettingsRepo _repo;
